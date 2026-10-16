@@ -8,7 +8,7 @@ The root MIT license applies to AgentEmu's original code, documentation and trai
 | NES display palette | Pally / Persune, MIT-0 | `crates/nes-video/palettes/LICENSE-MIT-0` and README |
 | Sampled NES 6502 CPU traces | SingleStepTests, MIT | `fixtures/cpu/LICENSE` and provenance |
 
-Gallery title cards and the README diagram are original project artwork under MIT. Game names identify compatibility; no affiliation or endorsement is implied. Commercial ROMs, game captures, save states and training datasets are not distributed.
+Gallery title cards and the README diagram are original project artwork under MIT. The README hero is AI-generated artwork; its other captures show the actual AgentEmu interface. See [visual credits](docs/images/NOTICE.md). Game names identify compatibility; no affiliation or endorsement is implied. Commercial ROMs, game captures, save states and training datasets are not distributed.
 
 `third-party/rust-dependencies.json` inventories the locked Cargo dependency graph across platforms. `third-party/rust-notices.txt` collects license/notice files from published crate sources and pinned upstream commits, including embedded font notices. `third-party/upstream/provenance.json` records source URLs and SHA256 digests. Regenerate with `python3 scripts/dependency-notices.py` after dependency changes. This is a comprehensive inventory, not a claim that every dependency is linked into every target. Crates with multiple license choices retain their upstream expressions. `option-ext` is MPL-2.0; its unmodified source is available at the recorded upstream location and crates.io version.
 

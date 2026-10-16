@@ -36,23 +36,3 @@ for index, (name, lines, accent) in enumerate(GAMES):
     for j, line in enumerate(lines):
         label(d, (44, 185 + j * 76), line, 67, "#f5f2e7", True)
     im.save(ASSETS / "gallery" / f"{name}.png")
-
-im = Image.new("RGB", (1440, 650), "#f5f3eb")
-d = ImageDraw.Draw(im)
-label(d, (64, 45), "ONE PLAYER. SHARED CONTROL.", 25, "#aa4c32", True)
-label(d, (60, 91), "You move. The neural network shoots.", 51, "#202723", True)
-for x, title, desc, accent in [
-    (64, "YOU", "Move · Aim · Jump", "#2f7669"),
-    (755, "NEURAL AGENT", "Fire · React", "#b3482f"),
-]:
-    d.rounded_rectangle(
-        (x, 215, x + 620, 417), radius=24, fill="#ffffff", outline="#d4d8cf", width=2
-    )
-    d.ellipse((x + 32, 248, x + 80, 296), fill=accent)
-    label(d, (x + 102, 244), title, 31, accent, True)
-    label(d, (x + 32, 330), desc, 32, "#202723")
-d.line((374, 418, 374, 475, 1065, 475, 1065, 418), fill="#859287", width=4)
-d.line((720, 475, 720, 509), fill="#859287", width=4)
-d.rounded_rectangle((426, 510, 1014, 598), radius=18, fill="#202723")
-label(d, (480, 531), "ONE CONTROLLER", 32, "#f5f3eb", True)
-im.save(ROOT / "docs/images/shared-control.png")

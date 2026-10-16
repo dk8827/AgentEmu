@@ -1,6 +1,56 @@
 {
-  "file": "shared-control.png",
-  "sha256": "44095ee1368c1d1b884f34cfb09bfb46043879ce90ea7c3db6bf6200296d6b5e",
-  "source": "scripts/generate-artwork.py",
-  "rights": "Original project artwork, MIT; IBM Plex Sans under SIL Open Font License. No game imagery."
+  "captured_or_created": "2026-10-16",
+  "rights": "Project artwork and UI captures under MIT; IBM Plex Sans under SIL Open Font License. No commercial-game imagery. See NOTICE.md.",
+  "assets": [
+    {
+      "file": "hero.webp",
+      "sha256": "8f4137c87353de314aecaaf66f40e08748522956655eaa40c1d3827c114bfd12",
+      "source": "OpenAI built-in image_gen; editorial concept, one refinement; WebP encoding",
+      "type": "AI-generated illustration",
+      "dimensions": [
+        2172,
+        724
+      ]
+    },
+    {
+      "file": "desktop-gallery.webp",
+      "sha256": "b8c5a1c985c5bb236777671d048882e461baf5596235eff54cc6a92ee9b0cc2c",
+      "source": "Native AgentEmu on macOS, application window capture at revision 350cc2e8809b8774f329b6adc2dba2a23160b18b; resized from 2560 \u00d7 1800",
+      "type": "Actual interface screenshot",
+      "dimensions": [
+        1600,
+        1125
+      ]
+    },
+    {
+      "file": "mobile-shared.webp",
+      "sha256": "1d0df17b83671e7ae492a9340a0b89c3bca2a259e758b511760249b148ddc149",
+      "source": "Chromium browser, 390 \u00d7 844 CSS-pixel viewport, same application revision; lossless WebP",
+      "type": "Actual interface screenshot, emulated viewport",
+      "dimensions": [
+        390,
+        844
+      ]
+    },
+    {
+      "file": "shared-setup.gif",
+      "sha256": "479a1b0de9792a76698951098b2dd8c46561b8d4f6933e8b9243672704fd429b",
+      "source": "Playwright recording of Chromium, 1040 \u00d7 900 viewport, same application revision; encoded to 832 \u00d7 720 at 8 fps",
+      "type": "Actual setup recording, no ROM or gameplay",
+      "dimensions": [
+        832,
+        720
+      ]
+    },
+    {
+      "file": "neural-inputs.svg",
+      "sha256": "5d8203ae2638c160d5d09bc270fa7446ebf5daf7ebbf31dca341f20cb528d109",
+      "source": "Project-authored SVG; integrations/contra-jungle/observation.json and fixed actor architecture",
+      "type": "Technical diagram",
+      "dimensions": [
+        840,
+        540
+      ]
+    }
+  ]
 }

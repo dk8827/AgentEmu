@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="540" viewBox="0 0 840 540" role="img" aria-labelledby="title desc">
+<title id="title">From game state to controller buttons</title>
+<desc id="desc">Contra Jungle's 256 inputs consist of 8 context, 32 player, 56 entity and 160 terrain values. Two 64-unit ReLU layers output 10 scores, decoded into horizontal, vertical, A and B actions. Control ownership combines the selected groups with human inputs. Start and Select remain human.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#818a83"/></marker></defs>
+<rect width="840" height="540" rx="14" fill="#f5f3eb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#202723">
+<text x="32" y="43" font-size="16" font-weight="700" letter-spacing="2" fill="#a54028">CONTRA JUNGLE · BUNDLED POLICY</text>
+<text x="32" y="84" font-size="30" font-weight="700">Game state in. Controller buttons out.</text>
+<g fill="#fff" stroke="#d7dbd3"><rect x="32" y="112" width="179" height="98" rx="8"/><rect x="231" y="112" width="179" height="98" rx="8"/><rect x="430" y="112" width="179" height="98" rx="8"/><rect x="629" y="112" width="179" height="98" rx="8"/></g>
+<g font-size="30" font-weight="700" fill="#2f7669"><text x="50" y="152">8</text><text x="249" y="152">32</text><text x="448" y="152">56</text><text x="647" y="152">160</text></g>
+<g font-size="21"><text x="50" y="185">Context</text><text x="249" y="185">Players</text><text x="448" y="185">Entities</text><text x="647" y="185">Terrain</text></g>
+<path d="M121 212v19h598v-19M320 212v19M519 212v19M420 231v25" fill="none" stroke="#818a83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="265" width="776" height="80" rx="8" fill="#202723"/>
+<g fill="#f5f3eb" font-size="24" font-weight="700" text-anchor="middle"><text x="156" y="301">256 inputs</text><text x="420" y="301">64 → 64</text><text x="684" y="301">10 scores</text></g>
+<g fill="#bfcac2" font-size="16" text-anchor="middle"><text x="156" y="328">structured values</text><text x="420" y="328">ReLU hidden layers</text><text x="684" y="328">4 action groups</text></g>
+<path d="M264 305h40M536 305h40M420 348v29" fill="none" stroke="#818a83" stroke-width="2" marker-end="url(#arrow)"/>
+<g fill="#f8e9df" stroke="#d9b6a1"><rect x="32" y="386" width="179" height="60" rx="8"/><rect x="231" y="386" width="179" height="60" rx="8"/><rect x="430" y="386" width="179" height="60" rx="8"/><rect x="629" y="386" width="179" height="60" rx="8"/></g>
+<g font-size="21" font-weight="700" text-anchor="middle" fill="#8c351f"><text x="121" y="423">Left / Right</text><text x="320" y="423">Up / Down</text><text x="519" y="423">A</text><text x="718" y="423">B</text></g>
+<text x="420" y="487" font-size="22" text-anchor="middle">Shared mode: one owner per group.</text>
+<text x="420" y="516" font-size="18" text-anchor="middle" fill="#526158">Human input keeps its groups. Start / Select stay human.</text>
+</g></svg>
