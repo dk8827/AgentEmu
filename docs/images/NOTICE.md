@@ -4,7 +4,8 @@ These assets contain no commercial-game imagery or game data.
 
 - **hero.webp** — original editorial controller illustration generated with
   OpenAI's built-in image-generation tool. Three directions were compared and
-  the editorial version was refined. Illustrative, not a screenshot or a diagram
+  the editorial version was refined, including a hand-anatomy correction.
+  Illustrative, not a screenshot or a diagram
   of the exact network. Provided under the project's MIT terms.
 - **desktop-gallery.webp** — actual native AgentEmu gallery capture on macOS.
 - **mobile-shared.webp** — actual browser UI at a 390 × 844 viewport. This is a

@@ -4,8 +4,8 @@
   "assets": [
     {
       "file": "hero.webp",
-      "sha256": "8f4137c87353de314aecaaf66f40e08748522956655eaa40c1d3827c114bfd12",
-      "source": "OpenAI built-in image_gen; editorial concept, one refinement; WebP encoding",
+      "sha256": "025d5c37875d74fde65a72bd64e635515f69d9226dc4d3c492d3e4daeb3ffb5e",
+      "source": "OpenAI built-in image_gen; editorial concept refined, then hand anatomy redrawn; WebP encoding",
       "type": "AI-generated illustration",
       "dimensions": [
         2172,
