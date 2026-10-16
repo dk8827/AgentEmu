@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "doubledragon2-mission1 research candidate",
+  "architecture": "doubledragon2-mlp-256-64-64-10-v1",
+  "observation": "doubledragon2-mission1-256-v2",
+  "action": "nes-factorized-3-3-2-2-v1",
+  "rom_sha256": "f6bf0d786168133ce5640a1e983d6cb2386261932798fbafb0dd809c05f51985",
+  "weights_sha256": "199e925af3f7e121a646dbdfa38898186f370e85f3c4f0cf74373ddfd912374b",
+  "decision_frames": 1,
+  "training": {
+    "algorithm": "observation-only teacher + DAgger"
+  }
+}

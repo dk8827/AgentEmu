@@ -1,0 +1,6 @@
+{
+  "file": "shared-control.png",
+  "sha256": "44095ee1368c1d1b884f34cfb09bfb46043879ce90ea7c3db6bf6200296d6b5e",
+  "source": "scripts/generate-artwork.py",
+  "rights": "Original project artwork, MIT; IBM Plex Sans under SIL Open Font License. No game imagery."
+}

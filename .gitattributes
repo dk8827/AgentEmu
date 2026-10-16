@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.onnx -text
+*.safetensors -text
+*.png -text
+
+# Preserve upstream notice text verbatim, including its original whitespace.
+third-party/upstream/** -whitespace
+
+third-party/** linguist-vendored

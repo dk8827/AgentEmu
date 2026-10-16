@@ -1,0 +1,35 @@
+{
+  "segments": [
+    {
+      "frames": 300,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 3,
+      "players": [
+        0,
+        0
+      ],
+      "zapper": [
+        128,
+        100,
+        true
+      ]
+    },
+    {
+      "frames": 240,
+      "players": [
+        0,
+        0
+      ],
+      "zapper": [
+        128,
+        100,
+        false
+      ]
+    }
+  ]
+}

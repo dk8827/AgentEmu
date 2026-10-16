@@ -1,0 +1,189 @@
+{
+  "schema": "iceclimber-mountain1-256-v1",
+  "width": 256,
+  "notes": "Float32. Encodings document existing v1 behavior; divisors are not physical-unit conversions. Unlisted slots and reserved fields are zero. Missing entities are all zero. Player-relative order is self then teammate. Indices and normalization are a model ABI.",
+  "groups": [
+    {
+      "name": "header",
+      "start": 0,
+      "stride": 8,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "port",
+          "encoding": "slot as f32",
+          "reserved": false
+        },
+        {
+          "name": "gameplay",
+          "encoding": "b(self.gameplay)",
+          "reserved": false
+        },
+        {
+          "name": "clock",
+          "encoding": "self.clock as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "pulse4",
+          "encoding": "b(self.clock & 2 != 0)",
+          "reserved": false
+        },
+        {
+          "name": "mountain",
+          "encoding": "self.mountain as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "phase",
+          "encoding": "self.phase as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "upper_visible_floor",
+          "encoding": "self.upper_visible_floor as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "teammate_active",
+          "encoding": "b(self.players[1 - slot].active)",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "players",
+      "start": 8,
+      "stride": 16,
+      "repeat": 2,
+      "order": "self, teammate",
+      "fields": [
+        {
+          "name": "active",
+          "encoding": "b(p.active)",
+          "reserved": false
+        },
+        {
+          "name": "x",
+          "encoding": "p.x as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "y",
+          "encoding": "p.y as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "lives",
+          "encoding": "p.lives as f32 / 127.",
+          "reserved": false
+        },
+        {
+          "name": "dead",
+          "encoding": "b(p.dead)",
+          "reserved": false
+        },
+        {
+          "name": "grounded",
+          "encoding": "b(p.grounded)",
+          "reserved": false
+        },
+        {
+          "name": "floor",
+          "encoding": "p.floor as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "motion",
+          "encoding": "p.motion as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "horizontal_motion",
+          "encoding": "p.horizontal_motion as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "facing",
+          "encoding": "p.facing as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "motion_2_4_6_8",
+          "encoding": "b(matches!(p.motion, 2 | 4 | 6 | 8))",
+          "reserved": false
+        },
+        {
+          "name": "motion5",
+          "encoding": "b(p.motion == 5)",
+          "reserved": false
+        },
+        {
+          "name": "jump_held",
+          "encoding": "b(p.jump_held)",
+          "reserved": false
+        },
+        {
+          "name": "hammer_held",
+          "encoding": "b(p.hammer_held)",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "start": 232,
+      "stride": 6,
+      "repeat": 4,
+      "order": "Manhattan distance, then source slot",
+      "fields": [
+        {
+          "name": "present",
+          "encoding": "1.",
+          "reserved": false
+        },
+        {
+          "name": "dx",
+          "encoding": "(e.x as f32 - p.x as f32) / 256.",
+          "reserved": false
+        },
+        {
+          "name": "dy",
+          "encoding": "(e.y as f32 - p.y as f32) / 256.",
+          "reserved": false
+        },
+        {
+          "name": "floor",
+          "encoding": "e.floor as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "state",
+          "encoding": "e.state as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "reserved5",
+          "encoding": "0.",
+          "reserved": true
+        }
+      ]
+    },
+    {
+      "name": "floor_tiles",
+      "start": 40,
+      "stride": 1,
+      "repeat": 192,
+      "order": "8 rows x 24 columns, row-major",
+      "fields": [
+        {
+          "name": "tile",
+          "encoding": "if code & 128 != 0 { -1 } else { code / 127 }",
+          "reserved": false
+        }
+      ]
+    }
+  ],
+  "encoder_sha256": "0994e835d9774fc5bdc5a4b2b061515b5fe45203314cf382cbd314d3d785d42f"
+}

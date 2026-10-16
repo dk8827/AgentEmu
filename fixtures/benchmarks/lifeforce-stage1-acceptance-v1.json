@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "name": "lifeforce-stage1-acceptance-v1",
+  "task": "lifeforce-stage1",
+  "split": "acceptance",
+  "horizon": 30000,
+  "notes": "Goal: reach stage two with a surviving ship from normal two-player reset. Mixed partners use an exploratory terrain-aware controller, not human trials. Frozen before first neural evaluation.",
+  "cases": [
+    {
+      "profile": "pair",
+      "warmup": 0,
+      "seed": 3015
+    },
+    {
+      "profile": "pair",
+      "warmup": 101,
+      "seed": 3116
+    },
+    {
+      "profile": "pair",
+      "warmup": 151,
+      "seed": 3166
+    },
+    {
+      "profile": "teacher",
+      "warmup": 0,
+      "seed": 3112
+    },
+    {
+      "profile": "teacher",
+      "warmup": 101,
+      "seed": 3213
+    },
+    {
+      "profile": "teacher",
+      "warmup": 151,
+      "seed": 3263
+    },
+    {
+      "profile": "random",
+      "warmup": 0,
+      "seed": 3209
+    },
+    {
+      "profile": "random",
+      "warmup": 101,
+      "seed": 3310
+    },
+    {
+      "profile": "random",
+      "warmup": 151,
+      "seed": 3360
+    },
+    {
+      "profile": "idle",
+      "warmup": 0,
+      "seed": 3306
+    },
+    {
+      "profile": "idle",
+      "warmup": 101,
+      "seed": 3407
+    },
+    {
+      "profile": "idle",
+      "warmup": 151,
+      "seed": 3457
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 0,
+      "seed": 3403
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 101,
+      "seed": 3504
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 151,
+      "seed": 3554
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 0,
+      "seed": 3500
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 101,
+      "seed": 3601
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 151,
+      "seed": 3651
+    }
+  ]
+}

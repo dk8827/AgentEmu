@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin==1.15.0"]
+build-backend = "maturin"
+[project]
+name = "contra-training"
+license = "MIT"
+description = "AgentEmu neural-network training tools and native Rust bindings"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.4.6", "gymnasium==1.4.0", "torch==2.14.1", "safetensors==0.8.0", "stable-baselines3==2.9.0"]
+
+[tool.maturin]
+manifest-path = "../crates/training-bindings/Cargo.toml"
+features = ["python"]
+module-name = "contra_training._native"
+python-source = "."
+python-packages = ["contra_training", "agentemu_training"]
+
+[project.scripts]
+agentemu-train = "contra_training.__main__:main"
+contra-train = "contra_training.__main__:main"

@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible emulator or interface problem
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach ROMs, save states, secrets or private paths. For vulnerabilities, see SECURITY.md."
+  - type: input
+    id: platform
+    attributes:
+      label: Platform and version
+      description: OS, browser/native build, and AgentEmu commit
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include expected and actual behavior. For game issues, give the cartridge title, region and SHA256, never the ROM.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs and additional context
+      description: Remove personal paths and credentials.

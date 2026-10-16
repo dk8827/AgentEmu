@@ -1,0 +1,15 @@
+{
+  "id": "rivercity-moose",
+  "module": "rcr",
+  "architecture": "rivercity-mlp-256-64-64-10-v1",
+  "observation": "rivercity-moose-256-v1",
+  "rom_sha256": "b95f8def04c0012604b7cc68cf4ed8f49b2dfe4beda6182051de4b2423bea7b1",
+  "reset": "rivercity-two-player-v1",
+  "scope": "River City Ransom \u00b7 Moose task",
+  "actions": [
+    "A button",
+    "B button"
+  ],
+  "assistance_architecture": "rivercity-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "rivercity-moose-268-shared-v1"
+}

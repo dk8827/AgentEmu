@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "weights_sha256": "4645621d3cb6846904ae525a418937b1b62bffb9c372920a1caaaa2cf0aacba1",
+  "rom_sha256": "26541a5550ee22deeb3d5484e4a96130219b58cff74d068fb1eb6567fa5e5519",
+  "description": "Recorded evaluation outcomes, including failures. Prepared starts and menu starts are different tests. These small deterministic suites do not establish human-partner or full-game reliability. Episode traces and fitting logs are not distributed.",
+  "reports": [
+    {
+      "id": "test",
+      "scope": "prepared-gameplay",
+      "split": "test",
+      "scripted_partner": "standard",
+      "summary": {
+        "pair": {
+          "clears": 0,
+          "cases": 6
+        }
+      },
+      "cases": [
+        {
+          "warmup": 97,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 2,
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "failure": "time-limit",
+          "input_sha256": "a3c0da6de1cc7083b87713e54e9c5a10c6025d61d5d623abc8752c8ac47977e1",
+          "final_state_sha256": "74042833965abe9abf141342b739a4ced1704fda0b83a3674fae31ce0f1fa480"
+        },
+        {
+          "warmup": 113,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 3155,
+          "success": false,
+          "progress": 3,
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "5a556244b848653f4cb657b180bc557a88d3faa54278a02711af73c169aed574",
+          "final_state_sha256": "a17e105a072376bf64e2378d387b0c88258d9c03d6c7d5ec144190ea79fb5b2b"
+        },
+        {
+          "warmup": 137,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 3015,
+          "success": false,
+          "progress": 3,
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "28b87a37e730d359cab7c433c02657deb3f9c1fc483179862f887b00b0658619",
+          "final_state_sha256": "03eee94494848f3245717bb6b48929344d15a20b314a39160e44d3b33b076217"
+        },
+        {
+          "warmup": 163,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 2,
+          "deaths": [
+            2,
+            2
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "failure": "time-limit",
+          "input_sha256": "1f968f2a00ae9f5cb4f48fed2263043cdf2b5a8efa4ee37a5c9e8a81530d6872",
+          "final_state_sha256": "97f115245eb4bf8936d2221e7679426ac061b3cdc84faa14a241826fd40b4765"
+        },
+        {
+          "warmup": 191,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 2922,
+          "success": false,
+          "progress": 2,
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "b097e82112a10c7ea2f4f28b2bbe6112958276b3d10709d93bfdde2b7ddb4272",
+          "final_state_sha256": "5e83971caedf39b37b2e8a5d37f5dfce9db0af1b0f5fc72abe615dcad7b13f15"
+        },
+        {
+          "warmup": 223,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 2743,
+          "success": false,
+          "progress": 2,
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "48ed5188fdf219d5ef7a5ca9e77965fb3c3d78e35a33a3728068263f12249fae",
+          "final_state_sha256": "bed44c3ef318d4e18ec3ed89f25a30d42fe455f65bcdab828f775dfe44664cc6"
+        }
+      ]
+    }
+  ]
+}

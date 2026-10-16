@@ -1,0 +1,260 @@
+{
+  "schema": "contra-base1-256-v1",
+  "width": 256,
+  "notes": "Float32. Encodings document existing v1 behavior; divisors are not physical-unit conversions. Unlisted slots and reserved fields are zero. Missing entities are all zero. Player-relative order is self then teammate. Indices and normalization are a model ABI.",
+  "groups": [
+    {
+      "name": "header",
+      "start": 0,
+      "stride": 16,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "port",
+          "encoding": "player as f32",
+          "reserved": false
+        },
+        {
+          "name": "gameplay",
+          "encoding": "b(self.gameplay)",
+          "reserved": false
+        },
+        {
+          "name": "phase",
+          "encoding": "self.phase as f32 / 7.",
+          "reserved": false
+        },
+        {
+          "name": "fire_phase",
+          "encoding": "(self.phase & 1) as f32",
+          "reserved": false
+        },
+        {
+          "name": "room",
+          "encoding": "self.room as f32 / 8.",
+          "reserved": false
+        },
+        {
+          "name": "room_cleared",
+          "encoding": "b(self.room_cleared)",
+          "reserved": false
+        },
+        {
+          "name": "barrier_removed",
+          "encoding": "b(self.barrier_removed)",
+          "reserved": false
+        },
+        {
+          "name": "boss_area",
+          "encoding": "b(self.boss_area)",
+          "reserved": false
+        },
+        {
+          "name": "boss_defeated",
+          "encoding": "b(self.boss_defeated)",
+          "reserved": false
+        },
+        {
+          "name": "player2_active",
+          "encoding": "b(self.players[1].active)",
+          "reserved": false
+        },
+        {
+          "name": "transitioning",
+          "encoding": "b(self.transitioning)",
+          "reserved": false
+        },
+        {
+          "name": "advancing",
+          "encoding": "b(self.advancing[player])",
+          "reserved": false
+        },
+        {
+          "name": "teammate_advancing",
+          "encoding": "b(self.advancing[1 - player])",
+          "reserved": false
+        },
+        {
+          "name": "supported",
+          "encoding": "b(self.supported)",
+          "reserved": false
+        },
+        {
+          "name": "reserved14",
+          "encoding": "0.",
+          "reserved": true
+        },
+        {
+          "name": "reserved15",
+          "encoding": "0.",
+          "reserved": true
+        }
+      ]
+    },
+    {
+      "name": "players",
+      "start": 16,
+      "stride": 16,
+      "repeat": 2,
+      "order": "self, teammate",
+      "fields": [
+        {
+          "name": "active",
+          "encoding": "p.active as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "x",
+          "encoding": "p.x as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "y",
+          "encoding": "p.y as f32 / 240.",
+          "reserved": false
+        },
+        {
+          "name": "vx",
+          "encoding": "p.vx as f32 / 4.",
+          "reserved": false
+        },
+        {
+          "name": "vy",
+          "encoding": "p.vy / 8.",
+          "reserved": false
+        },
+        {
+          "name": "grounded",
+          "encoding": "p.grounded as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "dead",
+          "encoding": "p.dead as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "reserve_lives",
+          "encoding": "p.reserve_lives as f32 / 10.",
+          "reserved": false
+        },
+        {
+          "name": "invincible",
+          "encoding": "p.invincible as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "water",
+          "encoding": "p.water as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon0",
+          "encoding": "(p.weapon == 0) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon1",
+          "encoding": "(p.weapon == 1) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon2",
+          "encoding": "(p.weapon == 2) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon3",
+          "encoding": "(p.weapon == 3) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon4",
+          "encoding": "(p.weapon == 4) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "rapid",
+          "encoding": "p.rapid as u8 as f32",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "start": 48,
+      "stride": 13,
+      "repeat": 16,
+      "order": "source slot; invisible wall cores retained",
+      "fields": [
+        {
+          "name": "present",
+          "encoding": "1.",
+          "reserved": false
+        },
+        {
+          "name": "dx",
+          "encoding": "(e.x as f32 - me.x as f32) / 256.",
+          "reserved": false
+        },
+        {
+          "name": "dy",
+          "encoding": "(e.y as f32 - me.y as f32) / 240.",
+          "reserved": false
+        },
+        {
+          "name": "vx",
+          "encoding": "e.vx / 8.",
+          "reserved": false
+        },
+        {
+          "name": "vy",
+          "encoding": "e.vy / 8.",
+          "reserved": false
+        },
+        {
+          "name": "hp",
+          "encoding": "e.hp as f32 / 64.",
+          "reserved": false
+        },
+        {
+          "name": "kind14",
+          "encoding": "b(e.kind == 0x14)",
+          "reserved": false
+        },
+        {
+          "name": "kind13",
+          "encoding": "b(e.kind == 0x13)",
+          "reserved": false
+        },
+        {
+          "name": "kind1_0b_0f_1b",
+          "encoding": "b(matches!(e.kind, 1 | 0x0b | 0x0f | 0x1b))",
+          "reserved": false
+        },
+        {
+          "name": "kind11",
+          "encoding": "b(e.kind == 0x11)",
+          "reserved": false
+        },
+        {
+          "name": "kind12",
+          "encoding": "b(e.kind == 0x12)",
+          "reserved": false
+        },
+        {
+          "name": "kind0a_10_1c",
+          "encoding": "b(matches!(e.kind, 0x0a | 0x10 | 0x1c))",
+          "reserved": false
+        },
+        {
+          "name": "requires_crouch",
+          "encoding": "b(e.requires_crouch)",
+          "reserved": false
+        }
+      ]
+    }
+  ],
+  "encoder_sha256": "b7397670ff9bb878a26fce99a04f8d93579c70f24f1d3f680e47e72ba9f27b86"
+}

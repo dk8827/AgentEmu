@@ -1,0 +1,781 @@
+{
+  "segments": [
+    {
+      "frames": 600,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 1,
+      "players": [
+        128,
+        0
+      ]
+    },
+    {
+      "frames": 30,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 1,
+      "players": [
+        8,
+        0
+      ]
+    },
+    {
+      "frames": 240,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 1,
+      "players": [
+        8,
+        0
+      ]
+    },
+    {
+      "frames": 300,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 1,
+      "players": [
+        1,
+        0
+      ]
+    },
+    {
+      "frames": 300,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 1,
+      "players": [
+        1,
+        0
+      ]
+    },
+    {
+      "frames": 240,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 2,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 1,
+      "players": [
+        1,
+        0
+      ]
+    },
+    {
+      "frames": 240,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 2,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 1,
+      "players": [
+        1,
+        0
+      ]
+    },
+    {
+      "frames": 240,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 2,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 1,
+      "players": [
+        1,
+        0
+      ]
+    },
+    {
+      "frames": 30,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 60,
+      "players": [
+        0,
+        0
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        129,
+        130
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        130,
+        129
+      ]
+    },
+    {
+      "frames": 20,
+      "players": [
+        128,
+        128
+      ]
+    }
+  ]
+}

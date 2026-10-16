@@ -1,0 +1,144 @@
+{
+  "segments": [
+    {
+      "frames": 600,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 240,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 240,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 240,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 240,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [1, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [4, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [4, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [4, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 1,
+      "players": [8, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "frames": 240,
+      "players": [0, 0]
+    },
+    {
+      "frames": 30,
+      "players": [0, 0]
+    },
+    {
+      "players": [128, 0],
+      "frames": 120
+    },
+    {
+      "players": [8, 0],
+      "frames": 1
+    },
+    {
+      "players": [0, 0],
+      "frames": 30
+    },
+    {
+      "players": [128, 0],
+      "frames": 120
+    },
+    {
+      "players": [1, 0],
+      "frames": 30
+    },
+    {
+      "players": [2, 0],
+      "frames": 30
+    }
+  ]
+}

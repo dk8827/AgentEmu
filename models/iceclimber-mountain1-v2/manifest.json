@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "Ice Climber mountain 1 v2",
+  "architecture": "iceclimber-mlp-256-64-64-10-v1",
+  "observation": "iceclimber-mountain1-256-v1",
+  "action": "nes-factorized-3-3-2-2-v1",
+  "rom_sha256": "de0ff27935752e0b5a7840d1f4ae9fe04f89236be0af79f5554fbf4f1f17d427",
+  "weights_sha256": "c913d1f3c6083a78b9e74f45693c2d67018ff20f236fed1f1f10d2974f23df06",
+  "decision_frames": 1,
+  "training": {
+    "algorithm": "verified controller demonstrations + nearest-demonstration DAgger"
+  }
+}

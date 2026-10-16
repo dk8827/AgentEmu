@@ -1,0 +1,30 @@
+{
+  "curriculum_fraction": 0.5,
+  "dev_starts": [
+    0,
+    8,
+    24,
+    48,
+    72,
+    96
+  ],
+  "evaluate_every": 32768,
+  "frames": 131072,
+  "gamma": 0.999,
+  "horizon": 9000,
+  "inputs": "compact",
+  "learning_rate": 3e-05,
+  "repeat": 1,
+  "retention_batches": 4,
+  "retention_coefficient": 0.1,
+  "reward": "current",
+  "rollout": 1024,
+  "schema": "agentemu-training-v1",
+  "seed": 1301,
+  "task": "contra-solo",
+  "train_starts": [
+    0,
+    24,
+    48
+  ]
+}

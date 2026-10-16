@@ -1,0 +1,370 @@
+{
+  "id": "contra-teamwork-v2",
+  "notes": "Expanded selection includes original pair starts 0\u201323; test timing offsets frozen before safe-wait-v2 refinement. Scripted teammates are proxies, not human validation.",
+  "legacy": [
+    {
+      "warmup": 0,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 1,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 2,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 3,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 4,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 5,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 6,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 7,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 8,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 9,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 10,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 11,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 12,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 13,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 14,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 15,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 16,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 17,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 18,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 19,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 20,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 21,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 22,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 23,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 24,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 25,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 26,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 27,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 28,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 29,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 30,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 31,
+      "profile": "pair",
+      "slot": 0
+    }
+  ],
+  "selection": [
+    {
+      "warmup": 0,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 1,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 2,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 3,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 4,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 5,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 6,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 7,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 8,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 9,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 10,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 11,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 12,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 13,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 14,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 15,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 16,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 17,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 18,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 19,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 20,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 21,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 22,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 23,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 32,
+      "profile": "pause",
+      "slot": 0
+    },
+    {
+      "warmup": 64,
+      "profile": "pause",
+      "slot": 1
+    },
+    {
+      "warmup": 48,
+      "profile": "steady",
+      "slot": 0
+    },
+    {
+      "warmup": 80,
+      "profile": "retreat",
+      "slot": 1
+    }
+  ],
+  "test": [
+    {
+      "warmup": 98,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 107,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 118,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 133,
+      "profile": "pair",
+      "slot": 0
+    },
+    {
+      "warmup": 146,
+      "profile": "steady",
+      "slot": 0
+    },
+    {
+      "warmup": 159,
+      "profile": "steady",
+      "slot": 1
+    },
+    {
+      "warmup": 173,
+      "profile": "pause",
+      "slot": 0
+    },
+    {
+      "warmup": 188,
+      "profile": "pause",
+      "slot": 1
+    },
+    {
+      "warmup": 201,
+      "profile": "retreat",
+      "slot": 0
+    },
+    {
+      "warmup": 217,
+      "profile": "retreat",
+      "slot": 1
+    },
+    {
+      "warmup": 231,
+      "profile": "jumper",
+      "slot": 0
+    },
+    {
+      "warmup": 239,
+      "profile": "jumper",
+      "slot": 1
+    }
+  ]
+}

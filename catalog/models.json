@@ -1,0 +1,68 @@
+[
+  {
+    "id": "contra-jungle-v3",
+    "bundled": true,
+    "status": "recommended",
+    "notes": "A teammate trained with cooperative DAgger. Jungle only; performance varies with human behavior."
+  },
+  {
+    "id": "contra-jungle-v2",
+    "bundled": true,
+    "status": "recommended",
+    "notes": "Jungle stage-clear policy. Benchmark success is not a guarantee in arbitrary states."
+  },
+  {
+    "id": "contra-base1-v1",
+    "bundled": true,
+    "status": "experimental",
+    "notes": "Experimental Base 1 policy. Load a compatible Base 1 entry save first."
+  },
+  {
+    "id": "snowbros-floor1-v2",
+    "bundled": true,
+    "status": "recommended",
+    "notes": "Floor 1. Cleared 29/30 cases in each of two suites and all 12 title-menu starts; later floors require human control."
+  },
+  {
+    "id": "snowbros-floor1-v1",
+    "bundled": true,
+    "status": "recommended",
+    "notes": "Floor 1 policy. B can throw snow or launch a snowball depending on the situation."
+  },
+  {
+    "id": "bubblebobble-round1-v2",
+    "bundled": true,
+    "status": "recommended",
+    "notes": "Round 1. Cleared 30/30 frozen evaluation episodes across both AI assignments; both players survived."
+  },
+  {
+    "id": "iceclimber-mountain1-v2",
+    "bundled": true,
+    "status": "experimental",
+    "notes": "Mountain 1 policy. Requires the exact US cartridge revision."
+  },
+  {
+    "id": "doubledragon2-mission1-v2",
+    "bundled": true,
+    "status": "recommended",
+    "notes": "Mission 1 on NORMAL. Choose 1 PLAYER for solo AI or 2 PLAYER A for co-op. Solo quality is experimental; later missions need human control."
+  },
+  {
+    "id": "doubledragon2-mission1-v1",
+    "bundled": true,
+    "status": "experimental",
+    "notes": "Mission 1 on NORMAL. Choose 1 PLAYER for solo AI or 2 PLAYER A for co-op. Solo quality is experimental; later missions need human control."
+  },
+  {
+    "id": "tmnt2-scene1-v1",
+    "bundled": true,
+    "status": "experimental",
+    "notes": "Experimental Scene 1 policy. Supports 1 PLAYER and 2 PLAYERS; solo quality is experimental. Later scenes need human control."
+  },
+  {
+    "id": "bubblebobble-round1-v1",
+    "bundled": true,
+    "status": "recommended",
+    "notes": "Round 1 policy. Later rounds require human takeover."
+  }
+]

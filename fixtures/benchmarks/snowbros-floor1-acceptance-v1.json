@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "name": "snowbros-floor1-acceptance-v1",
+  "task": "snowbros-floor1",
+  "split": "acceptance",
+  "horizon": 9000,
+  "notes": "Fixed first-floor timing variations; mixed ports use a scripted teacher, not a human. Frozen before evaluating these mixed scenarios. No later-floor claim.",
+  "cases": [
+    {
+      "profile": "pair",
+      "warmup": 0,
+      "seed": 613
+    },
+    {
+      "profile": "pair",
+      "warmup": 101,
+      "seed": 714
+    },
+    {
+      "profile": "pair",
+      "warmup": 151,
+      "seed": 764
+    },
+    {
+      "profile": "teacher",
+      "warmup": 0,
+      "seed": 710
+    },
+    {
+      "profile": "teacher",
+      "warmup": 101,
+      "seed": 811
+    },
+    {
+      "profile": "teacher",
+      "warmup": 151,
+      "seed": 861
+    },
+    {
+      "profile": "random",
+      "warmup": 0,
+      "seed": 807
+    },
+    {
+      "profile": "random",
+      "warmup": 101,
+      "seed": 908
+    },
+    {
+      "profile": "random",
+      "warmup": 151,
+      "seed": 958
+    },
+    {
+      "profile": "idle",
+      "warmup": 0,
+      "seed": 904
+    },
+    {
+      "profile": "idle",
+      "warmup": 101,
+      "seed": 1005
+    },
+    {
+      "profile": "idle",
+      "warmup": 151,
+      "seed": 1055
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 0,
+      "seed": 1001
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 101,
+      "seed": 1102
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 151,
+      "seed": 1152
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 0,
+      "seed": 1098
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 101,
+      "seed": 1199
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 151,
+      "seed": 1249
+    }
+  ]
+}

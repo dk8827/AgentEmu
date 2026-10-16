@@ -1,0 +1,189 @@
+{
+  "schema": "chipndale-zone0-256-v1",
+  "width": 256,
+  "notes": "Float32. Encodings document existing v1 behavior; divisors are not physical-unit conversions. Unlisted slots and reserved fields are zero. Missing entities are all zero. Player-relative order is self then teammate. Indices and normalization are a model ABI.",
+  "groups": [
+    {
+      "name": "header",
+      "start": 0,
+      "stride": 8,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "port",
+          "encoding": "slot as f32",
+          "reserved": false
+        },
+        {
+          "name": "gameplay",
+          "encoding": "b(self.gameplay)",
+          "reserved": false
+        },
+        {
+          "name": "phase",
+          "encoding": "self.phase as f32 / 239.",
+          "reserved": false
+        },
+        {
+          "name": "pulse16",
+          "encoding": "b(self.phase % 16 < 2)",
+          "reserved": false
+        },
+        {
+          "name": "area",
+          "encoding": "self.area as f32 / 24.",
+          "reserved": false
+        },
+        {
+          "name": "camera_y",
+          "encoding": "self.camera_y as f32 / 2048.",
+          "reserved": false
+        },
+        {
+          "name": "robot_hits",
+          "encoding": "self.robot_hits.min(5) as f32 / 5.",
+          "reserved": false
+        },
+        {
+          "name": "pulse80",
+          "encoding": "b(self.phase % 80 < 35)",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "players",
+      "start": 8,
+      "stride": 16,
+      "repeat": 2,
+      "order": "self, teammate",
+      "fields": [
+        {
+          "name": "active",
+          "encoding": "b(p.active)",
+          "reserved": false
+        },
+        {
+          "name": "x",
+          "encoding": "p.x as f32 / 2048.",
+          "reserved": false
+        },
+        {
+          "name": "y",
+          "encoding": "p.y as f32 / 2048.",
+          "reserved": false
+        },
+        {
+          "name": "health",
+          "encoding": "p.health as f32 / 3.",
+          "reserved": false
+        },
+        {
+          "name": "reserve_lives",
+          "encoding": "p.reserve_lives as f32 / 9.",
+          "reserved": false
+        },
+        {
+          "name": "action",
+          "encoding": "p.action as f32 / 12.",
+          "reserved": false
+        },
+        {
+          "name": "dead",
+          "encoding": "b(p.dead)",
+          "reserved": false
+        },
+        {
+          "name": "carrying",
+          "encoding": "b(p.carrying)",
+          "reserved": false
+        },
+        {
+          "name": "carried_slot",
+          "encoding": "p.carried_slot as f32 / 15.",
+          "reserved": false
+        },
+        {
+          "name": "invincibility",
+          "encoding": "p.invincibility as f32 / 128.",
+          "reserved": false
+        },
+        {
+          "name": "jump_held",
+          "encoding": "b(p.jump_held)",
+          "reserved": false
+        },
+        {
+          "name": "throw_held",
+          "encoding": "b(p.throw_held)",
+          "reserved": false
+        },
+        {
+          "name": "action6",
+          "encoding": "b(p.action == 6)",
+          "reserved": false
+        },
+        {
+          "name": "action0",
+          "encoding": "b(p.action == 0)",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "start": 40,
+      "stride": 12,
+      "repeat": 14,
+      "order": "source slot",
+      "fields": [
+        {
+          "name": "present",
+          "encoding": "b(e.present)",
+          "reserved": false
+        },
+        {
+          "name": "kind",
+          "encoding": "e.kind as f32 / 127.",
+          "reserved": false
+        },
+        {
+          "name": "dx",
+          "encoding": "(e.x as f32 - me.x as f32) / 2048.",
+          "reserved": false
+        },
+        {
+          "name": "dy",
+          "encoding": "(e.y as f32 - me.y as f32) / 2048.",
+          "reserved": false
+        },
+        {
+          "name": "x",
+          "encoding": "e.x as f32 / 2048.",
+          "reserved": false
+        },
+        {
+          "name": "y",
+          "encoding": "e.y as f32 / 2048.",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "boss",
+      "start": 208,
+      "stride": 1,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "hit_cooldown",
+          "encoding": "robot_hit_cooldown / 60",
+          "reserved": false
+        }
+      ]
+    }
+  ],
+  "encoder_sha256": "6c498ca3b210f61e6f5c88f7664e034fb890a8293fb6f870a19c9de5e9b5ef86"
+}

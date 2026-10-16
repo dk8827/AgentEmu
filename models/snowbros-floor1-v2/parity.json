@@ -1,0 +1,6 @@
+{
+  "cases": 256,
+  "max_absolute_error": 1.52587890625e-05,
+  "max_head_scaled_error": 1.5497207641601562e-06,
+  "controller_decisions": "exact"
+}

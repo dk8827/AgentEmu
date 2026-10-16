@@ -1,0 +1,15 @@
+{
+  "id": "lifeforce-stage1",
+  "module": "lifeforce",
+  "architecture": "lifeforce-mlp-256-64-64-10-v1",
+  "observation": "lifeforce-stage1-256-v1",
+  "rom_sha256": "a606c6c4c6d81b72ee783c5ad9b91cb8e1d09206c4ad2ba881698fa15fa3af57",
+  "reset": "lifeforce-two-player-v1",
+  "scope": "Life Force \u00b7 Stage 1 only",
+  "actions": [
+    "A button",
+    "B button"
+  ],
+  "assistance_architecture": "lifeforce-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "lifeforce-stage1-268-shared-v1"
+}

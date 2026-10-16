@@ -1,0 +1,109 @@
+{
+  "id": "tmnt2-scene1",
+  "module": "tmnt",
+  "architecture": "tmnt2-mlp-256-64-64-10-v1",
+  "observation": "tmnt2-scene1-256-v1",
+  "rom_sha256": "637fa9d773cb39fcd4e55faf46bc53f82ac9d7706f8473adeb06e2b9e95c2414",
+  "reset": "tmnt2-two-player-v1",
+  "scope": "TMNT II · Scene 1 · 1 or 2 players",
+  "actions": [
+    "A button",
+    "B button"
+  ],
+  "assistance_architecture": "tmnt2-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "tmnt2-scene1-268-shared-v1",
+  "solo_reset": "tmnt2-scene1-solo-menu-v1",
+  "solo_menu": [
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      240,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      30,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      240,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        1,
+        0
+      ]
+    ],
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        1,
+        0
+      ]
+    ],
+    [
+      120,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        1,
+        0
+      ]
+    ],
+    [
+      69,
+      [
+        0,
+        0
+      ]
+    ]
+  ]
+}

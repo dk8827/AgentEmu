@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "base": "contra-jungle-256-v1",
+  "history": {
+    "start": 256,
+    "count": 16,
+    "ports": "self then teammate",
+    "addresses": [
+      "0xF1 + port"
+    ],
+    "bits": [
+      "A",
+      "B",
+      "Select",
+      "Start",
+      "Up",
+      "Down",
+      "Left",
+      "Right"
+    ],
+    "encoding": "game-read byte, most-significant bit first, binary floats"
+  },
+  "aim": {
+    "start": 272,
+    "count": 24,
+    "ports": "self then teammate",
+    "addresses": [
+      "0xC2 + port"
+    ],
+    "encoding": "12-way one-hot per port: valid values 0..10 and unknown"
+  },
+  "shared_context": {
+    "count": 12,
+    "position": "after all game features",
+    "encoding": "eight current human button bits in NES controller order, then ownership of horizontal, vertical, A, B"
+  },
+  "state": "Only pre-action cartridge RAM. No stored AI proposal history; ordinary machine reset/restore restores these fields.",
+  "limits": "Aim is game state, not a promised bullet trajectory for every weapon. Existing weapon fields are retained; no speculative cooldown field is added.",
+  "encoder_sha256": "6abfe346ecefe5fae38999ead6b05220cb77dbeaba28aecb17a55f3b7fbe9b5c"
+}

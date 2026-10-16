@@ -1,0 +1,180 @@
+{
+  "schema": "tmnt2-scene1-256-v1",
+  "width": 256,
+  "notes": "Float32. Encodings document existing v1 behavior; divisors are not physical-unit conversions. Unlisted slots and reserved fields are zero. Missing entities are all zero. Player-relative order is self then teammate. Indices and normalization are a model ABI.",
+  "groups": [
+    {
+      "name": "header",
+      "start": 0,
+      "stride": 8,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "port",
+          "encoding": "slot as f32",
+          "reserved": false
+        },
+        {
+          "name": "gameplay",
+          "encoding": "b(self.gameplay)",
+          "reserved": false
+        },
+        {
+          "name": "phase",
+          "encoding": "self.phase as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "pulse4",
+          "encoding": "b(self.phase % 4 < 2)",
+          "reserved": false
+        },
+        {
+          "name": "screen",
+          "encoding": "self.screen as f32 / 8.",
+          "reserved": false
+        },
+        {
+          "name": "entity_count",
+          "encoding": "self.entities.len() as f32 / 11.",
+          "reserved": false
+        },
+        {
+          "name": "teammate_active",
+          "encoding": "b(self.players[1 - slot].active)",
+          "reserved": false
+        },
+        {
+          "name": "pulse36",
+          "encoding": "b(self.phase % 36 < 2)",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "players",
+      "start": 8,
+      "stride": 16,
+      "repeat": 2,
+      "order": "self, teammate",
+      "fields": [
+        {
+          "name": "active",
+          "encoding": "b(p.active)",
+          "reserved": false
+        },
+        {
+          "name": "x",
+          "encoding": "p.x as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "y",
+          "encoding": "p.y as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "lives",
+          "encoding": "p.lives.min(127) as f32 / 127.",
+          "reserved": false
+        },
+        {
+          "name": "dead",
+          "encoding": "b(p.dead)",
+          "reserved": false
+        },
+        {
+          "name": "airborne",
+          "encoding": "b(p.airborne)",
+          "reserved": false
+        },
+        {
+          "name": "ground_y",
+          "encoding": "p.ground_y as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "health",
+          "encoding": "p.health as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "attacking",
+          "encoding": "b(p.attacking)",
+          "reserved": false
+        },
+        {
+          "name": "facing_left",
+          "encoding": "b(p.facing_left)",
+          "reserved": false
+        },
+        {
+          "name": "motion",
+          "encoding": "p.motion as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "turtle",
+          "encoding": "p.turtle as f32 / 3.",
+          "reserved": false
+        },
+        {
+          "name": "height",
+          "encoding": "(p.ground_y as f32 - p.y as f32) / 255.",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "start": 40,
+      "stride": 12,
+      "repeat": 11,
+      "order": "abs(dx)+2*abs(dground_y), then source slot",
+      "fields": [
+        {
+          "name": "present",
+          "encoding": "1.",
+          "reserved": false
+        },
+        {
+          "name": "dx",
+          "encoding": "(e.x as f32 - me.x as f32) / 255.",
+          "reserved": false
+        },
+        {
+          "name": "dground_y",
+          "encoding": "(e.ground_y as f32 - me.ground_y as f32) / 255.",
+          "reserved": false
+        },
+        {
+          "name": "dy",
+          "encoding": "(e.y as f32 - me.y as f32) / 255.",
+          "reserved": false
+        },
+        {
+          "name": "health",
+          "encoding": "e.health as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "motion",
+          "encoding": "e.motion as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "facing_left",
+          "encoding": "b(e.facing_left)",
+          "reserved": false
+        },
+        {
+          "name": "slot",
+          "encoding": "e.slot as f32 / 17.",
+          "reserved": false
+        }
+      ]
+    }
+  ],
+  "encoder_sha256": "ecd181222a6e25a39da809a1b3f4d3ac73ad49f5f50f9eb4a23c335494a2dd06"
+}

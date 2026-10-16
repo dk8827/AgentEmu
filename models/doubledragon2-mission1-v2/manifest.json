@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "Double Dragon II mission 1 v2",
+  "architecture": "doubledragon2-mlp-256-64-64-10-v1",
+  "observation": "doubledragon2-mission1-256-v2",
+  "action": "nes-factorized-3-3-2-2-v1",
+  "rom_sha256": "f6bf0d786168133ce5640a1e983d6cb2386261932798fbafb0dd809c05f51985",
+  "weights_sha256": "989b74732a07bab0d39e679109ce3dbfe7c4b07ea7dce4244a8752038ee1f87b",
+  "decision_frames": 1,
+  "training": {
+    "algorithm": "mixed-teammate DAgger"
+  }
+}

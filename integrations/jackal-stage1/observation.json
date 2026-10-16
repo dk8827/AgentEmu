@@ -1,0 +1,198 @@
+{
+  "schema": "jackal-stage1-256-v1",
+  "width": 256,
+  "notes": "Float32. Encodings document existing v1 behavior; divisors are not physical-unit conversions. Unlisted slots and reserved fields are zero. Missing entities are all zero. Player-relative order is self then teammate. Indices and normalization are a model ABI.",
+  "groups": [
+    {
+      "name": "header",
+      "start": 0,
+      "stride": 8,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "port",
+          "encoding": "slot as f32",
+          "reserved": false
+        },
+        {
+          "name": "gameplay",
+          "encoding": "b(self.gameplay)",
+          "reserved": false
+        },
+        {
+          "name": "phase",
+          "encoding": "self.phase as f32 / 15.",
+          "reserved": false
+        },
+        {
+          "name": "pulse16",
+          "encoding": "b(self.phase < 2)",
+          "reserved": false
+        },
+        {
+          "name": "screen",
+          "encoding": "self.screen as f32 / 16.",
+          "reserved": false
+        },
+        {
+          "name": "scroll",
+          "encoding": "self.scroll as f32 / 240.",
+          "reserved": false
+        },
+        {
+          "name": "camera_x",
+          "encoding": "self.camera_x as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "boss_active",
+          "encoding": "b(self.boss_remaining <= 4)",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "players",
+      "start": 8,
+      "stride": 16,
+      "repeat": 2,
+      "order": "self, teammate",
+      "fields": [
+        {
+          "name": "active",
+          "encoding": "b(p.active)",
+          "reserved": false
+        },
+        {
+          "name": "x",
+          "encoding": "p.x as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "y",
+          "encoding": "p.y as f32 / 239.",
+          "reserved": false
+        },
+        {
+          "name": "world_x",
+          "encoding": "p.world_x as f32 / 512.",
+          "reserved": false
+        },
+        {
+          "name": "north",
+          "encoding": "p.north as f32 / 4096.",
+          "reserved": false
+        },
+        {
+          "name": "lives",
+          "encoding": "p.lives as f32 / 8.",
+          "reserved": false
+        },
+        {
+          "name": "state",
+          "encoding": "p.state as f32 / 8.",
+          "reserved": false
+        },
+        {
+          "name": "weapon",
+          "encoding": "p.weapon as f32 / 8.",
+          "reserved": false
+        },
+        {
+          "name": "facing",
+          "encoding": "p.facing as f32 / 8.",
+          "reserved": false
+        },
+        {
+          "name": "invincibility",
+          "encoding": "p.invincibility as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "grenade_active",
+          "encoding": "b(p.grenade_active)",
+          "reserved": false
+        },
+        {
+          "name": "grenade_held",
+          "encoding": "b(p.grenade_held)",
+          "reserved": false
+        },
+        {
+          "name": "dead",
+          "encoding": "b(p.dead)",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "start": 40,
+      "stride": 6,
+      "repeat": 16,
+      "order": "source slot",
+      "fields": [
+        {
+          "name": "present",
+          "encoding": "1.",
+          "reserved": false
+        },
+        {
+          "name": "kind",
+          "encoding": "e.kind as f32 / 127.",
+          "reserved": false
+        },
+        {
+          "name": "dx",
+          "encoding": "(e.x as f32 - me.x as f32) / 255.",
+          "reserved": false
+        },
+        {
+          "name": "dy",
+          "encoding": "(e.y as f32 - me.y as f32) / 239.",
+          "reserved": false
+        },
+        {
+          "name": "health",
+          "encoding": "e.health as f32 / 127.",
+          "reserved": false
+        },
+        {
+          "name": "state",
+          "encoding": "e.state as f32 / 255.",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "terrain",
+      "start": 136,
+      "stride": 1,
+      "repeat": 50,
+      "order": "self 5x5 then teammate 5x5, row-major",
+      "fields": [
+        {
+          "name": "tile",
+          "encoding": "code / 3",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "boss",
+      "start": 186,
+      "stride": 1,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "remaining",
+          "encoding": "min(boss_remaining / 4, 1)",
+          "reserved": false
+        }
+      ]
+    }
+  ],
+  "encoder_sha256": "4b251b92b00a63d6a4c847babc82558ccc5122a7117515963f61a912e9cb0dff"
+}

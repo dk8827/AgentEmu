@@ -1,0 +1,156 @@
+[
+  {
+    "file": "Contra (U).nes",
+    "sha256": "26541a5550ee22deeb3d5484e4a96130219b58cff74d068fb1eb6567fa5e5519",
+    "mapper": 2,
+    "gameplay_script": "gameplay/00.json",
+    "prg_sha1": "979494e7869ac7ab4815fdbd1dc99f893f713fbf",
+    "chr_sha1": null,
+    "database_matches": [
+      {
+        "id": "contra",
+        "description": "Contra (USA)"
+      }
+    ]
+  },
+  {
+    "file": "Snow Bros (U).nes",
+    "sha256": "5c7ab65f5ed5a00f2c6193e060423f05b5b88c1e937f5514686627a5e9529c58",
+    "mapper": 1,
+    "gameplay_script": "gameplay/01.json",
+    "prg_sha1": "57256acfd32b472336177b6812f3dba022078264",
+    "chr_sha1": "4d7ce2535f316eb2a33c7660b757c2f40600a536",
+    "database_matches": [],
+    "identity_note": "User-approved supplied variant: CHR matches reference USA; PRG differs. Test this exact complete-file SHA256."
+  },
+  {
+    "file": "Ice Climber (U).nes",
+    "sha256": "de0ff27935752e0b5a7840d1f4ae9fe04f89236be0af79f5554fbf4f1f17d427",
+    "mapper": 0,
+    "gameplay_script": "gameplay/02.json",
+    "prg_sha1": "e323ebaa2c0be5b9a31a21743ddfe7f3d1580672",
+    "chr_sha1": "7ae5f457bb5996a5373c9cf46db3d296e27ec56a",
+    "database_matches": [
+      {
+        "id": "iceclimb",
+        "description": "Ice Climber (Europe, USA, Korea)"
+      }
+    ]
+  },
+  {
+    "file": "Lifeforce (U).nes",
+    "sha256": "a606c6c4c6d81b72ee783c5ad9b91cb8e1d09206c4ad2ba881698fa15fa3af57",
+    "mapper": 2,
+    "gameplay_script": "gameplay/03.json",
+    "prg_sha1": "351edb1fdf4bce3bfc56d1eecccfdc6a21bb14f4",
+    "chr_sha1": null,
+    "database_matches": [
+      {
+        "id": "lifefrce",
+        "description": "Life Force (USA)"
+      }
+    ]
+  },
+  {
+    "file": "Jackal (U).nes",
+    "sha256": "98ed6d10391cccef249ce45cd935eb6263163f727fbf2fc11adb8116aa49f31d",
+    "mapper": 2,
+    "gameplay_script": "gameplay/04.json",
+    "prg_sha1": "813e6a8bc0a502bb393f8729b1bc19836d5421a5",
+    "chr_sha1": null,
+    "database_matches": [
+      {
+        "id": "jackal",
+        "description": "Jackal (USA)"
+      }
+    ]
+  },
+  {
+    "file": "Chip 'n Dale Rescue Rangers (U) [!].nes",
+    "sha256": "b44ad2bd58d681e13eaa3b1bb6aa411be7cdf6bd79ab774492264c1a3c3e25a3",
+    "mapper": 1,
+    "gameplay_script": "gameplay/05.json",
+    "prg_sha1": "28ddca5d299e7894e3c3aa0a193684ca3e384ee9",
+    "chr_sha1": "37a729021173bec08a8497ad03fd58379b0fce39",
+    "database_matches": [
+      {
+        "id": "chipndalu",
+        "description": "Disney's Chip 'n Dale Rescue Rangers (USA)"
+      }
+    ]
+  },
+  {
+    "file": "Bubble Bobble (U).nes",
+    "sha256": "fc521e891d074369d67579fd56617460b9c9949dec67cc4a37d46b4e4bb09d29",
+    "mapper": 1,
+    "gameplay_script": "gameplay/06.json",
+    "prg_sha1": "d1b349e71a67a1f7d58d0194be2c729ae26b1498",
+    "chr_sha1": "9c54d3951289fa716fc44c3442570ce7d0588887",
+    "database_matches": [
+      {
+        "id": "bublboblu",
+        "description": "Bubble Bobble (USA)"
+      }
+    ]
+  },
+  {
+    "file": "Double Dragon 2 - The Revenge (U).nes",
+    "sha256": "f6bf0d786168133ce5640a1e983d6cb2386261932798fbafb0dd809c05f51985",
+    "mapper": 4,
+    "gameplay_script": "gameplay/07.json",
+    "prg_sha1": "1873c35cb6b3a017386fd964962dc5b6f6027c42",
+    "chr_sha1": "93ca431a0861cf3f0a57460b7d4aa5686bfaa06a",
+    "database_matches": [
+      {
+        "id": "ddragon2u",
+        "description": "Double Dragon II - The Revenge (USA, rev. A)"
+      }
+    ],
+    "mmc3_alternate": false
+  },
+  {
+    "file": "Nintendo World Cup (U).nes",
+    "sha256": "d6fb9df984d89f4c9c41064f8fa0ce3f0dbb53a9961ceaba274129eb121e53a6",
+    "mapper": 4,
+    "gameplay_script": "gameplay/08.json",
+    "prg_sha1": "17b1a56755b43634f4e0b4c927d68265e1ee0656",
+    "chr_sha1": "33225bd5ee72f92761fdce931c93dd54e6885bd4",
+    "database_matches": [
+      {
+        "id": "nintenwcu",
+        "description": "Nintendo World Cup (USA)"
+      }
+    ],
+    "mmc3_alternate": false
+  },
+  {
+    "file": "River City Ransom (U).nes",
+    "sha256": "b95f8def04c0012604b7cc68cf4ed8f49b2dfe4beda6182051de4b2423bea7b1",
+    "mapper": 4,
+    "gameplay_script": "gameplay/09.json",
+    "prg_sha1": "b3ba8bcd292917de7c3bd745975b226b66cbcf85",
+    "chr_sha1": "cac17cddfadb3a93c8e3e3f4c894611de3f69ce5",
+    "database_matches": [
+      {
+        "id": "rcr",
+        "description": "River City Ransom (USA)"
+      }
+    ],
+    "mmc3_alternate": false
+  },
+  {
+    "file": "Teenage Mutant Ninja Turtles 2 (U).nes",
+    "sha256": "637fa9d773cb39fcd4e55faf46bc53f82ac9d7706f8473adeb06e2b9e95c2414",
+    "mapper": 4,
+    "gameplay_script": "gameplay/10.json",
+    "prg_sha1": "b49cc88e026dac7f5ba96f5c16bcb897addbe259",
+    "chr_sha1": "8094278cf3267757953ab761dbccf38589142376",
+    "database_matches": [
+      {
+        "id": "tmnt2u",
+        "description": "Teenage Mutant Ninja Turtles II - The Arcade Game (USA)"
+      }
+    ],
+    "mmc3_alternate": false
+  }
+]

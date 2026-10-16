@@ -1,0 +1,54 @@
+#nes-accessibility .semantic-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+#nes-accessibility .semantic-control {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  font: 16px system-ui;
+}
+#nes-accessibility .semantic-control:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+  background: #f7f5ef;
+  color: #202322;
+  border: 2px solid #1269df;
+  outline: 2px solid white;
+  z-index: 1;
+  min-height: 36px;
+}
+#nes-accessibility input.semantic-control:focus {
+  opacity: 1;
+  background: #fff;
+  color: #202322;
+  border: 2px solid #1269df;
+  pointer-events: auto;
+}
+/* Keep Rust's icons and selected styling visible; only draw a focus ring. */
+#nes-accessibility button.semantic-control:focus-visible {
+  background: transparent;
+  color: transparent;
+}
+
+/* The range input supplies semantics/keyboard events; Rust draws the slider. */
+#nes-accessibility input[type="range"].semantic-control {
+  appearance: none;
+  background: transparent;
+}
+#nes-accessibility input[type="range"].semantic-control::-webkit-slider-thumb {
+  appearance: none;
+  background: transparent;
+  border: 0;
+}
+#nes-accessibility input[type="range"].semantic-control::-moz-range-thumb {
+  background: transparent;
+  border: 0;
+}
+#nes-accessibility input[type="range"].semantic-control::-moz-range-track {
+  background: transparent;
+}

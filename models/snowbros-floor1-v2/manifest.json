@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "Snow Bros. Floor 1 v2",
+  "architecture": "snowbros-mlp-256-64-64-10-v1",
+  "observation": "snowbros-floor1-256-v1",
+  "action": "nes-factorized-3-3-2-2-v1",
+  "rom_sha256": "5c7ab65f5ed5a00f2c6193e060423f05b5b88c1e937f5514686627a5e9529c58",
+  "weights_sha256": "74ed25f5593debf70482c64bc6f6ac94ade2effc21aa1006706729d51dfd9220",
+  "decision_frames": 1,
+  "training": {
+    "algorithm": "mixed-teammate DAgger"
+  }
+}

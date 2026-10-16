@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "weights_sha256": "c913d1f3c6083a78b9e74f45693c2d67018ff20f236fed1f1f10d2974f23df06",
+  "rom_sha256": "de0ff27935752e0b5a7840d1f4ae9fe04f89236be0af79f5554fbf4f1f17d427",
+  "description": "Recorded evaluation outcomes, including failures. Prepared starts and menu starts are different tests. These small deterministic suites do not establish human-partner or full-game reliability. Episode traces and fitting logs are not distributed.",
+  "reports": [
+    {
+      "id": "test",
+      "scope": "prepared-gameplay",
+      "split": "test",
+      "scripted_partner": "standard",
+      "summary": {
+        "pair": {
+          "clears": 3,
+          "cases": 6
+        }
+      },
+      "cases": [
+        {
+          "warmup": 97,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 5664,
+          "success": true,
+          "progress": 9,
+          "deaths": [
+            1,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "failure": null,
+          "input_sha256": "d80af243d5b4d8dcdb787e79c99009a9a4a0cd05ab77d144d0c5256f1fdd6992",
+          "final_state_sha256": "8f0d5196aa142a406b4ab4b722b32daf5404a9f1829c378337ae710863639bf5"
+        },
+        {
+          "warmup": 113,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 6878,
+          "success": false,
+          "progress": 9,
+          "deaths": [
+            3,
+            4
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "f5b506a97651fffd910116d3cd923c7c069a754da23f8e024b5f64dacfea40be",
+          "final_state_sha256": "14e3c9993f35fe30411d9161ddd5023d252ee62df54e6b7ffb91c4ed7508b5fc"
+        },
+        {
+          "warmup": 137,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 8212,
+          "success": false,
+          "progress": 7,
+          "deaths": [
+            4,
+            2
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "c2514962b976710810c31f903b50e1d5c35aad656a1d3c3edafa2f7f637b9530",
+          "final_state_sha256": "1ad4457a752ad7c3d2374d30ffe52c2956bc4d722f2b80513a6078413050f843"
+        },
+        {
+          "warmup": 163,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 7105,
+          "success": true,
+          "progress": 9,
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "failure": null,
+          "input_sha256": "7d28d546434ffb1691c5bfca6e42fca785d6f275d0c441a6fd4bda72442ec637",
+          "final_state_sha256": "bbf1bf1683e57ab03bcd3f65582457a05274a19b3a6da37a1a61bd6bfb559b77"
+        },
+        {
+          "warmup": 191,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 4083,
+          "success": false,
+          "progress": 8,
+          "deaths": [
+            4,
+            4
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "f25e4a1696324a6052d8321b858007a5137de537b1ebcb57b43408b2462287ce",
+          "final_state_sha256": "834d79dc7a8b75ddeece2685c4ae1cdbcfdee790c1f899af7e67f967f1aaa1a3"
+        },
+        {
+          "warmup": 223,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 9795,
+          "success": true,
+          "progress": 9,
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "failure": null,
+          "input_sha256": "ecffa91d0a0186ca919558ad1663be6b5c92150ee5e75949aeb21c21aa4778dc",
+          "final_state_sha256": "18e9c26fe65af44d05ef34e00baf4394290d24bff64c4c00325990b5e4d26aa0"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "scope": "prepared-gameplay",
+      "split": "acceptance",
+      "scripted_partner": "standard",
+      "summary": {
+        "agent-p1": {
+          "clears": 0,
+          "cases": 3
+        },
+        "agent-p2": {
+          "clears": 2,
+          "cases": 3
+        },
+        "idle": {
+          "clears": 0,
+          "cases": 3
+        },
+        "pair": {
+          "clears": 2,
+          "cases": 3
+        },
+        "random": {
+          "clears": 1,
+          "cases": 3
+        },
+        "teacher": {
+          "clears": 0,
+          "cases": 3
+        }
+      },
+      "cases": [
+        {
+          "warmup": 0,
+          "seed": 1015,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 4925,
+          "success": true,
+          "progress": 9,
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "failure": null,
+          "input_sha256": "c76c233a8a0c64c9ad341e71a5c1db900e711653893e034e2090b616b6f26980",
+          "final_state_sha256": "13575c6f9ce186bf2a818a5241f21012d939d0f82e588bcd096cda9ef84be32f"
+        },
+        {
+          "warmup": 101,
+          "seed": 1116,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 6320,
+          "success": true,
+          "progress": 9,
+          "deaths": [
+            0,
+            3
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "failure": null,
+          "input_sha256": "f9c43c08d42998b34f516ef60b10f8f7a8aa51f658f0b770808edccf3fd51b2f",
+          "final_state_sha256": "70872f79d775e8a99a82c96edf3c5918a3b89271dad0b2e11304713f3f58d696"
+        },
+        {
+          "warmup": 151,
+          "seed": 1166,
+          "profile": "pair",
+          "slot": 0,
+          "frames": 8299,
+          "success": false,
+          "progress": 9,
+          "deaths": [
+            1,
+            2
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "02d7c808c9f9814c8c185fb2c1ef09d0031764b364a308dab3b5610e0f1662a4",
+          "final_state_sha256": "b9510aa3e68475a1035f930f286e6d4b41b64d40d0f0efde67d4f93f3fb37d0f"
+        },
+        {
+          "warmup": 0,
+          "seed": 1112,
+          "profile": "teacher",
+          "slot": 0,
+          "frames": 5252,
+          "success": false,
+          "progress": 2,
+          "deaths": [
+            4,
+            4
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "3db9026a9cb24bb148ba2c6b23d34b6ece753dbb6c82b3b17dd2631eea805ef0",
+          "final_state_sha256": "ee36cd11a73dd3f275b11a67366f8d760e275917aea745b0a1c5adda690f9c3b"
+        },
+        {
+          "warmup": 101,
+          "seed": 1213,
+          "profile": "teacher",
+          "slot": 0,
+          "frames": 3866,
+          "success": false,
+          "progress": 3,
+          "deaths": [
+            4,
+            4
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "46ea8432e85c287f703927034001d2284625eec951d95c90bc17105e7fb9dbb3",
+          "final_state_sha256": "0f3cfc17102d4a36c660e88e4872e086a5fa41270d21d57e5703cc29fefa50e6"
+        },
+        {
+          "warmup": 151,
+          "seed": 1263,
+          "profile": "teacher",
+          "slot": 0,
+          "frames": 7191,
+          "success": false,
+          "progress": 4,
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "9cfbf05b0643d13d7151af200d07f5745cc348d7d11f4bd68029a23ea18cd081",
+          "final_state_sha256": "6b69cf34c2ae288490b5cf560a00810e7844e2e7d7bb04ff8eda84098374aa7c"
+        },
+        {
+          "warmup": 0,
+          "seed": 1209,
+          "profile": "random",
+          "slot": 0,
+          "frames": 7037,
+          "success": true,
+          "progress": 9,
+          "deaths": [
+            2,
+            1
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "failure": null,
+          "input_sha256": "8926424f3891419e95afdf212971a5ca526a7d2773583fbf5a14b587007e00c6",
+          "final_state_sha256": "71321ac1dec79f5425f313c41ee574d78024b4054894dff75d94498407751b58"
+        },
+        {
+          "warmup": 101,
+          "seed": 1310,
+          "profile": "random",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 3,
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "failure": "time-limit",
+          "input_sha256": "a29ec6ab633f66ecee86085201602687549b95a2e197df086ba7ec46b6beacc9",
+          "final_state_sha256": "8ff29d593ab4a96fe78248e517145c4aeb7729acfe028baca7d5338fb8373f66"
+        },
+        {
+          "warmup": 151,
+          "seed": 1360,
+          "profile": "random",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 3,
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "failure": "time-limit",
+          "input_sha256": "986b6ffdee9b282759b5bb50e2089ccaf64b4cad780678a1924ebd98ccc391c1",
+          "final_state_sha256": "6395e5ae6a6a8ab54aa0e4fd3ab05d3c7cbea934252456acb2906a6b7a2734a2"
+        },
+        {
+          "warmup": 0,
+          "seed": 1306,
+          "profile": "idle",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 3,
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "failure": "time-limit",
+          "input_sha256": "151ff79f29e96d211576b9a2e3e78f518b26109916616945d50cdee82dd2ba8b",
+          "final_state_sha256": "3726132273324d1abe7ba1bf8340312d276a4103b945ed51bdb58eb61e4137e8"
+        },
+        {
+          "warmup": 101,
+          "seed": 1407,
+          "profile": "idle",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 3,
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "failure": "time-limit",
+          "input_sha256": "151ff79f29e96d211576b9a2e3e78f518b26109916616945d50cdee82dd2ba8b",
+          "final_state_sha256": "07697ec3562fb907d174ee30ea329e64f38a059e7a136fbf9283a1fbe4cc9fee"
+        },
+        {
+          "warmup": 151,
+          "seed": 1457,
+          "profile": "idle",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 3,
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "failure": "time-limit",
+          "input_sha256": "151ff79f29e96d211576b9a2e3e78f518b26109916616945d50cdee82dd2ba8b",
+          "final_state_sha256": "087df16d14734497f0c12f7f66a7f92bd6bc63e2009b9c0ce764eaabfb73398f"
+        },
+        {
+          "warmup": 0,
+          "seed": 1403,
+          "profile": "agent-p1",
+          "slot": 0,
+          "frames": 6466,
+          "success": false,
+          "progress": 8,
+          "deaths": [
+            4,
+            2
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "62af25565add01aedc8220b08aa439dea4c59431e28e4822165c50c43e37ff0f",
+          "final_state_sha256": "5a6bf42ed80b907ea48f865e47076bc51199240895df02551f14d00897146212"
+        },
+        {
+          "warmup": 101,
+          "seed": 1504,
+          "profile": "agent-p1",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 9,
+          "deaths": [
+            1,
+            2
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "failure": "time-limit",
+          "input_sha256": "299e944c8d1067873d35596606e6e6b1ba473473438b68871589a53c89952d67",
+          "final_state_sha256": "112dfaa732a9cf3fd4ed17c3d59a6eb1d37845a5bf2ea2434076f6cbc919b8b4"
+        },
+        {
+          "warmup": 151,
+          "seed": 1554,
+          "profile": "agent-p1",
+          "slot": 0,
+          "frames": 12000,
+          "success": false,
+          "progress": 6,
+          "deaths": [
+            3,
+            4
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "failure": "time-limit",
+          "input_sha256": "e2aedc037c300d8bf953a9dfbc53f6a798375561c484839ccbd4333aad692dc8",
+          "final_state_sha256": "b194ca93c6f7208a6a39dc66dcef2db4c70a095b745bcb3cb7043070abdfa4a6"
+        },
+        {
+          "warmup": 0,
+          "seed": 1500,
+          "profile": "agent-p2",
+          "slot": 1,
+          "frames": 6696,
+          "success": true,
+          "progress": 9,
+          "deaths": [
+            2,
+            1
+          ],
+          "survivors": [
+            false,
+            true
+          ],
+          "failure": null,
+          "input_sha256": "d9dc68058fdd3c6f1fa89f0ca43ebbc0ff1def8f7ab528ef04ca3b871f0cffac",
+          "final_state_sha256": "7606a79ba6f9d01c40dd2e466693be8781451d20754092b4b64953477d0598d1"
+        },
+        {
+          "warmup": 101,
+          "seed": 1601,
+          "profile": "agent-p2",
+          "slot": 1,
+          "frames": 4435,
+          "success": false,
+          "progress": 5,
+          "deaths": [
+            2,
+            4
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "failure": "lives-exhausted",
+          "input_sha256": "3aec9a04271b5854becb0e5a4b88d15e3793cad09f6d62b510127c5dc592d9cc",
+          "final_state_sha256": "aa19fe16c0c78ce6317aacf97f6880411695151c361b6c9a58cdf05fb471ddff"
+        },
+        {
+          "warmup": 151,
+          "seed": 1651,
+          "profile": "agent-p2",
+          "slot": 1,
+          "frames": 6490,
+          "success": true,
+          "progress": 9,
+          "deaths": [
+            3,
+            0
+          ],
+          "survivors": [
+            false,
+            true
+          ],
+          "failure": null,
+          "input_sha256": "16515b350614ca56597d699fbde7f451b0aedda0245d5ae74634a7bddf5cb1c2",
+          "final_state_sha256": "afc62c32410661f21792928dc8744933f483b8ef5e765b40015e87167532ebc5"
+        }
+      ]
+    }
+  ]
+}

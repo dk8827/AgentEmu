@@ -1,0 +1,74 @@
+{
+  "id": "snowbros-floor1",
+  "module": "snow",
+  "architecture": "snowbros-mlp-256-64-64-10-v1",
+  "observation": "snowbros-floor1-256-v1",
+  "rom_sha256": "5c7ab65f5ed5a00f2c6193e060423f05b5b88c1e937f5514686627a5e9529c58",
+  "reset": "snow-two-player-v1",
+  "scope": "Snow Bros. · Floor 1 only",
+  "actions": [
+    "Jump",
+    "Snow / launch"
+  ],
+  "assistance_architecture": "snowbros-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "snowbros-floor1-268-shared-v1",
+  "solo_reset": "snowbros-floor1-solo-menu-v1",
+  "solo_menu": [
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      120,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      30,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ]
+  ]
+}

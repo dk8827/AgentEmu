@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "name": "iceclimber-mountain1-acceptance-v1",
+  "task": "iceclimber-mountain1",
+  "split": "acceptance",
+  "horizon": 12000,
+  "notes": "Frozen mountain-one pair and per-port scripted teammate comparison. Success requires mountain two after the bonus round. No human teammate or later-mountain claim.",
+  "cases": [
+    {
+      "profile": "pair",
+      "warmup": 0,
+      "seed": 1015
+    },
+    {
+      "profile": "pair",
+      "warmup": 101,
+      "seed": 1116
+    },
+    {
+      "profile": "pair",
+      "warmup": 151,
+      "seed": 1166
+    },
+    {
+      "profile": "teacher",
+      "warmup": 0,
+      "seed": 1112
+    },
+    {
+      "profile": "teacher",
+      "warmup": 101,
+      "seed": 1213
+    },
+    {
+      "profile": "teacher",
+      "warmup": 151,
+      "seed": 1263
+    },
+    {
+      "profile": "random",
+      "warmup": 0,
+      "seed": 1209
+    },
+    {
+      "profile": "random",
+      "warmup": 101,
+      "seed": 1310
+    },
+    {
+      "profile": "random",
+      "warmup": 151,
+      "seed": 1360
+    },
+    {
+      "profile": "idle",
+      "warmup": 0,
+      "seed": 1306
+    },
+    {
+      "profile": "idle",
+      "warmup": 101,
+      "seed": 1407
+    },
+    {
+      "profile": "idle",
+      "warmup": 151,
+      "seed": 1457
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 0,
+      "seed": 1403
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 101,
+      "seed": 1504
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 151,
+      "seed": 1554
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 0,
+      "seed": 1500
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 101,
+      "seed": 1601
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 151,
+      "seed": 1651
+    }
+  ]
+}

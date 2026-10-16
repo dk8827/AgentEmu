@@ -1,0 +1,53 @@
+{
+  "id": "iceclimber-mountain1",
+  "module": "ice",
+  "architecture": "iceclimber-mlp-256-64-64-10-v1",
+  "observation": "iceclimber-mountain1-256-v1",
+  "rom_sha256": "de0ff27935752e0b5a7840d1f4ae9fe04f89236be0af79f5554fbf4f1f17d427",
+  "reset": "ice-two-player-v1",
+  "scope": "Ice Climber · Mountain 1 only",
+  "actions": [
+    "A button",
+    "B button"
+  ],
+  "assistance_architecture": "iceclimber-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "iceclimber-mountain1-268-shared-v1",
+  "solo_reset": "iceclimber-mountain1-solo-menu-v1",
+  "solo_menu": [
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      30,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ]
+  ]
+}

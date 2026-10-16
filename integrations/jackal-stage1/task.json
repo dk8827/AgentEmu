@@ -1,0 +1,15 @@
+{
+  "id": "jackal-stage1",
+  "module": "jackal",
+  "architecture": "jackal-mlp-256-64-64-10-v1",
+  "observation": "jackal-stage1-256-v1",
+  "rom_sha256": "98ed6d10391cccef249ce45cd935eb6263163f727fbf2fc11adb8116aa49f31d",
+  "reset": "jackal-two-player-v1",
+  "scope": "Jackal \u00b7 Stage 1 only",
+  "actions": [
+    "A button",
+    "B button"
+  ],
+  "assistance_architecture": "jackal-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "jackal-stage1-268-shared-v1"
+}

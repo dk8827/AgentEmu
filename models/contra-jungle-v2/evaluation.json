@@ -1,0 +1,726 @@
+{
+  "version": 1,
+  "weights_sha256": "18cc9921ae626063acebab0e1d7bfb0f6896cf2be9be5a803bc487348f81303b",
+  "rom_sha256": "26541a5550ee22deeb3d5484e4a96130219b58cff74d068fb1eb6567fa5e5519",
+  "description": "Recorded evaluation outcomes, including failures. Prepared starts and menu starts are different tests. These small deterministic suites do not establish human-partner or full-game reliability. Episode traces and fitting logs are not distributed.",
+  "reports": [
+    {
+      "id": "evaluation",
+      "scope": "prepared-gameplay",
+      "split": "diagnostic",
+      "scripted_partner": "standard",
+      "summary": {
+        "pair": {
+          "clears": 26,
+          "cases": 32
+        }
+      },
+      "cases": [
+        {
+          "seed": 0,
+          "frames": 3785,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3313,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "0e93bae14d1a3a7de438f28d3d1dcf3ff392418019bbdc0cc3a4856090548cf1",
+          "final_state_sha256": "12b565943eb1c51f0bac9c6bb61569ec84c764657a66ea6b05e725bfccb4e72f"
+        },
+        {
+          "seed": 1,
+          "frames": 4330,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3858,
+          "truncated": false,
+          "progress": [
+            2494,
+            3321
+          ],
+          "deaths": [
+            3,
+            2
+          ],
+          "survivors": [
+            false,
+            true
+          ],
+          "input_sha256": "5cf8f6af26514d5bb24e1593c677ff6655fd53e1159baaeae31b68e50310c32d",
+          "final_state_sha256": "05da63f7b1ea8d22de5b0c390684885c13dcffc598c1191631cf0ca8e4d5774b"
+        },
+        {
+          "seed": 2,
+          "frames": 3670,
+          "success": false,
+          "level": 0,
+          "boss_defeated_frame": null,
+          "truncated": false,
+          "progress": [
+            2936,
+            1815
+          ],
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "input_sha256": "dcb8679fd6049b2f6f057dd1c64adce826382961fed515f884b5dd8f94bf9fdd",
+          "final_state_sha256": "7ec924922765a53c8406b4ee3f012e42c05fc31bacbb0b56eded1378238f7b87"
+        },
+        {
+          "seed": 3,
+          "frames": 3780,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3308,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "016a6a29b33114ad6aef9f0e95cd591d49aeb98ad54dd881955a11b746d59479",
+          "final_state_sha256": "808ac66f289d72fb00f6f64d621c7d27239c637f3b139c1430573f0ce644a44e"
+        },
+        {
+          "seed": 4,
+          "frames": 4054,
+          "success": false,
+          "level": 0,
+          "boss_defeated_frame": null,
+          "truncated": false,
+          "progress": [
+            3208,
+            2933
+          ],
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "input_sha256": "d45e21531659d9b7430dc99282e54c2b942b2e2f04cb893399bf08ffa5825544",
+          "final_state_sha256": "d2334f65b9cd57a482e24a9363f00bec1bc69f5ca1f2cd57c0408f1a0e6d7937"
+        },
+        {
+          "seed": 5,
+          "frames": 4305,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3833,
+          "truncated": false,
+          "progress": [
+            3321,
+            2933
+          ],
+          "deaths": [
+            2,
+            3
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "input_sha256": "877ed680d96c5c5d379ebe46e34144a3cff78716605296128eb19b496409c7e6",
+          "final_state_sha256": "4b2036976418ccdd71c5d7d31237f2a9bdefc4e9da984234ef7a52c4a9a623fa"
+        },
+        {
+          "seed": 6,
+          "frames": 3866,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3394,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "cdbbcacc55be7115785a95ffb8807f88a52df21bc3f27501f5f04d57a5016151",
+          "final_state_sha256": "f324013e0b050a4dfabf7479c775efbfbad0b7c6ef2b56b085d9847af4e910b5"
+        },
+        {
+          "seed": 7,
+          "frames": 4284,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3812,
+          "truncated": false,
+          "progress": [
+            3321,
+            2933
+          ],
+          "deaths": [
+            2,
+            3
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "input_sha256": "433b466dcb1250160b5b81e65d86c373691c3ef72b6ec75e9e10491138cb627d",
+          "final_state_sha256": "7dbd9bd1d08582b6be17d22689adfcccc4d4db8417d5770d40ba6d1810e6141d"
+        },
+        {
+          "seed": 8,
+          "frames": 4102,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3630,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            1,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "fe7e049e605456555dced570db29517fa96a1da8739ec4ea04207c15fee5c992",
+          "final_state_sha256": "c7b16b514fa1080ed4edcfcfd6460c1bc4e835121c4a68732ac5ca1998d5ea38"
+        },
+        {
+          "seed": 9,
+          "frames": 3880,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3408,
+          "truncated": false,
+          "progress": [
+            3114,
+            3321
+          ],
+          "deaths": [
+            3,
+            0
+          ],
+          "survivors": [
+            false,
+            true
+          ],
+          "input_sha256": "62b6d58f2a3d6840b0422b621176fafc31bb8e2f21257225fd56fbac26b3c8b2",
+          "final_state_sha256": "15f049bcd750c7df74fed44c9fb9901982716e109b814562da7b607c69758162"
+        },
+        {
+          "seed": 10,
+          "frames": 4169,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3697,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            2,
+            2
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "48f583f9f92a7ed8968de0d1308436835dea68369c2290c580958030ce9a1e9f",
+          "final_state_sha256": "8714dfa70dec811d4d82dfbc46c383e3ee95a7bce7121f8626f3d619d56c7c48"
+        },
+        {
+          "seed": 11,
+          "frames": 3932,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3353,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "dad4a895802b0c3b9f36bc1319339a9010cba038a641ff37f70471338c6ee9e8",
+          "final_state_sha256": "e20e5d97bc09d42c80c7f727ac82c15398dd914b3d3b46258243938bca817324"
+        },
+        {
+          "seed": 12,
+          "frames": 3745,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3273,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "6a04423b2b1f25aa3a2e05cc8658e19431690186ea79c4aa5e450fa12228aa07",
+          "final_state_sha256": "7248fc6c862d43f5f729445590b8305604ab3918b8d40e5d387b027083bba3e6"
+        },
+        {
+          "seed": 13,
+          "frames": 4344,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3872,
+          "truncated": false,
+          "progress": [
+            3175,
+            3321
+          ],
+          "deaths": [
+            3,
+            2
+          ],
+          "survivors": [
+            false,
+            true
+          ],
+          "input_sha256": "83e113f152064bb7a32cd1fae55d8803dd3c4a83f826de8518f010e6ba586281",
+          "final_state_sha256": "9056ee4c03ddcb740d649fdcdb67327286231051d97e1eb508ebffd5ee5076ce"
+        },
+        {
+          "seed": 14,
+          "frames": 3852,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3380,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "2e7fd7df39d94571e0d540073e962c5f35185a315c9f9d7fe36628053e1b0ff3",
+          "final_state_sha256": "4454e080fe2880d38b53879c7f0ab637c74b052a622bb5674ee73ad924b6eea2"
+        },
+        {
+          "seed": 15,
+          "frames": 4146,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3598,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            2,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "dc53ca3cdfb8fcbcd677c68c66b36e749ae1e192597d4cfb513bc449cd6f0b52",
+          "final_state_sha256": "c620b9661542f6e547045f057b3ace3c1c99aadba3cd10dedc5c8f4f2078b714"
+        },
+        {
+          "seed": 16,
+          "frames": 4334,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3862,
+          "truncated": false,
+          "progress": [
+            3321,
+            2849
+          ],
+          "deaths": [
+            2,
+            3
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "input_sha256": "3e1530c08fb75f121829df4ba68b1a680e6cfa5376b38da12b128a5bc6757712",
+          "final_state_sha256": "b2394bcb84089a23bbb5e1ba5a3ff280d16679ee168d3d93913e268faa3294e4"
+        },
+        {
+          "seed": 17,
+          "frames": 3889,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3310,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "d28bf3ff47a168d92cead27eb3ee7d60d474eb379482cc65da8782156127346f",
+          "final_state_sha256": "f0c222f810cdded9ccdd90a011c9dc139c24b54e93258906092684ad5a4b119b"
+        },
+        {
+          "seed": 18,
+          "frames": 3751,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3279,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "66f5ef0383933e06ea32a59531a32ba35afa439f7459da79f1c3927929e6aa80",
+          "final_state_sha256": "cd3f94ffbd25988ee48c03e7e4e9ea9d731687d33d49b8c6056ff147f65e92fa"
+        },
+        {
+          "seed": 19,
+          "frames": 3512,
+          "success": false,
+          "level": 0,
+          "boss_defeated_frame": null,
+          "truncated": false,
+          "progress": [
+            2412,
+            2934
+          ],
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "input_sha256": "f7a912abc57a56fdcaacdfb51f141371ec75ebc0aee540245de61a23d12f1317",
+          "final_state_sha256": "4e8c38637a812e62d1f879e08369c8845370f73dbfd7116778731ff0dde80ba5"
+        },
+        {
+          "seed": 20,
+          "frames": 4313,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3841,
+          "truncated": false,
+          "progress": [
+            3321,
+            2933
+          ],
+          "deaths": [
+            2,
+            3
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "input_sha256": "6d46982ee3c4e270f1aad3b5bc897f337b1277ebbbb74f1b75c972b73b4bfb56",
+          "final_state_sha256": "43089aa2fe4f05dc80e91372412a448f58cbb6421899fad0d3701bae866b802c"
+        },
+        {
+          "seed": 21,
+          "frames": 3750,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3278,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "aae9b158b83127fb4a32168432f27de88fcc9fc914d7422ff960a65e98b10053",
+          "final_state_sha256": "0b784011d6b7109de74769cd8f06c2fe3c8ee358f1ba53c4e59e51014edcc2ae"
+        },
+        {
+          "seed": 22,
+          "frames": 4351,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3879,
+          "truncated": false,
+          "progress": [
+            3321,
+            2933
+          ],
+          "deaths": [
+            2,
+            3
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "input_sha256": "34714d93f01fbd539845bd18590a589ca56d8430865176f330948b85607be8f4",
+          "final_state_sha256": "8acc4467b6691e7b277b32c9e899cea6c3532ff4c277ff916910e44b0aa1b515"
+        },
+        {
+          "seed": 23,
+          "frames": 3777,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3305,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "0e4dc6c99604a60adf9b7b63d88f95a299d92042f261602eb467fc1ae432addb",
+          "final_state_sha256": "849d8adbedc7561bbae7997a3f7356fdd3033523e3f9348bccc4abd506383a7d"
+        },
+        {
+          "seed": 24,
+          "frames": 3780,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3308,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "a3d83349708a45eab56d7d88201b0478e21ab8c8f3defb5fa313cfa8924afb92",
+          "final_state_sha256": "98d7ecefc388966c8bd505af1edd8cf76c46fd7cb45671d00ea133b243f7dfed"
+        },
+        {
+          "seed": 25,
+          "frames": 3886,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3307,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            1
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "e84ac2fd18c72d53da3ce2123049dd283ac557a708ea57971adfc43b23bd946f",
+          "final_state_sha256": "7c65dd032db77d31878e5cd2b6fedf495aa4e3f260e8ba139316b263bab2f24b"
+        },
+        {
+          "seed": 26,
+          "frames": 3560,
+          "success": false,
+          "level": 0,
+          "boss_defeated_frame": null,
+          "truncated": false,
+          "progress": [
+            2947,
+            3023
+          ],
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "input_sha256": "e0cd8fc6854e1d53db5df38eccffa93d29faaf6b24f98bdbc0af1fd606e624ac",
+          "final_state_sha256": "e0ec0329f7c6f091b5effa9239140b63e8fd05b4ae44dd53c020e0214c90bc9c"
+        },
+        {
+          "seed": 27,
+          "frames": 3814,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3342,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "8890bfd5c5c4e91e988f0d05d3d17f8c3b4bfc45a75c90c24ec917f33edc543f",
+          "final_state_sha256": "c3a92ccf9ebd2d72d989257137d93e41ec102d7a9c91acb8b3b18776cfd678d3"
+        },
+        {
+          "seed": 28,
+          "frames": 4405,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3933,
+          "truncated": false,
+          "progress": [
+            3321,
+            2933
+          ],
+          "deaths": [
+            2,
+            3
+          ],
+          "survivors": [
+            true,
+            false
+          ],
+          "input_sha256": "3ac3d54ba67d3b8c954a8e033b64ac73b0e8ec74839d6c2c63bcfe2681128579",
+          "final_state_sha256": "67ca54fba3ac58ebfa81fc75ded45ed9fe0726e1efce391d23a6b58a94f1407b"
+        },
+        {
+          "seed": 29,
+          "frames": 3790,
+          "success": true,
+          "level": 1,
+          "boss_defeated_frame": 3318,
+          "truncated": false,
+          "progress": [
+            3321,
+            3321
+          ],
+          "deaths": [
+            0,
+            0
+          ],
+          "survivors": [
+            true,
+            true
+          ],
+          "input_sha256": "ff3a0801444eaadec659cb5449d24e6e21989fcb86263e9faba08aa8b4a6cde6",
+          "final_state_sha256": "5a8b7d386493b2fbe92d2b37a1ac3c2ac14d5377803f8b4ef2a0628fc61065a3"
+        },
+        {
+          "seed": 30,
+          "frames": 3798,
+          "success": false,
+          "level": 0,
+          "boss_defeated_frame": null,
+          "truncated": false,
+          "progress": [
+            2976,
+            2933
+          ],
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "input_sha256": "e608446ad5211fbc1bf0d4a14bf8749819b3d0c489cdc7b9544dde25a9a114b8",
+          "final_state_sha256": "9f9e9811d6e445096ba4a9fbeed95439b76e805104832ac9e23c526a3d62a796"
+        },
+        {
+          "seed": 31,
+          "frames": 3579,
+          "success": false,
+          "level": 0,
+          "boss_defeated_frame": null,
+          "truncated": false,
+          "progress": [
+            2845,
+            2600
+          ],
+          "deaths": [
+            3,
+            3
+          ],
+          "survivors": [
+            false,
+            false
+          ],
+          "input_sha256": "507cf9bb3d6e0062537312b8a5d1af9f5382dde9fb2624bda8e59d13d0828d8d",
+          "final_state_sha256": "3cdbf2ec400507894217fade6c7ccce9c2bac3054262a7b2135fda4dd68a03d9"
+        }
+      ]
+    }
+  ]
+}

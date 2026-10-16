@@ -1,0 +1,15 @@
+{
+  "id": "worldcup-firstmatch",
+  "module": "worldcup",
+  "architecture": "worldcup-mlp-256-64-64-10-v1",
+  "observation": "worldcup-firstmatch-256-v1",
+  "rom_sha256": "d6fb9df984d89f4c9c41064f8fa0ce3f0dbb53a9961ceaba274129eb121e53a6",
+  "reset": "worldcup-usa-tournament-two-player-v1",
+  "scope": "Nintendo World Cup \u00b7 First match only",
+  "actions": [
+    "A button",
+    "B button"
+  ],
+  "assistance_architecture": "worldcup-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "worldcup-firstmatch-268-shared-v1"
+}

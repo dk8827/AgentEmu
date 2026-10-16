@@ -1,0 +1,67 @@
+{
+  "id": "bubblebobble-round1",
+  "module": "bubble",
+  "architecture": "bubblebobble-mlp-256-64-64-10-v1",
+  "observation": "bubblebobble-round1-256-v1",
+  "rom_sha256": "fc521e891d074369d67579fd56617460b9c9949dec67cc4a37d46b4e4bb09d29",
+  "reset": "bubble-two-player-v1",
+  "scope": "Bubble Bobble · Round 1 only",
+  "actions": [
+    "A button",
+    "B button"
+  ],
+  "assistance_architecture": "bubblebobble-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "bubblebobble-round1-268-shared-v1",
+  "solo_reset": "bubblebobble-round1-solo-menu-v1",
+  "solo_menu": [
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      240,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      30,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "agentemu-release-v1",
+  "notes": "Frozen before release-model refinement. Timing variation within each first stage; mixed profiles use scripted partners, not humans. Historical benchmarks remain separate.",
+  "selection": [0, 16, 40, 80, 103, 139, 177, 217],
+  "test": [109, 119, 131, 143, 157, 169, 181, 199, 227, 239],
+  "profiles": ["pair", "agent-p1", "agent-p2"],
+  "baselines": ["teacher", "random", "idle"],
+  "seed": 20261013,
+  "minimum_clear_rate": 0.8,
+  "horizons": {
+    "contra-jungle": 9000,
+    "snowbros-floor1": 9000,
+    "bubblebobble-round1": 12000,
+    "iceclimber-mountain1": 12000,
+    "doubledragon2-mission1": 18000,
+    "tmnt2-scene1": 30000
+  }
+}

@@ -1,0 +1,3 @@
+target-version = "py311"
+line-length = 100
+extend-exclude = ["training/contra_training/contracts.py", "training/contra_training/observation_contracts.py"]

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "name": "agentemu-ice-release-v2",
+  "notes": "Same starts, horizons, profiles and clear threshold as release-v1. Ice Climber deaths count cartridge life losses, including scrolling deaths that skip the death animation, and exclude underflow after a player is inactive. Earlier animation-edge death totals are not comparable; the completion target is unchanged.",
+  "selection": [
+    0,
+    16,
+    40,
+    80,
+    103,
+    139,
+    177,
+    217
+  ],
+  "test": [
+    109,
+    119,
+    131,
+    143,
+    157,
+    169,
+    181,
+    199,
+    227,
+    239
+  ],
+  "profiles": [
+    "pair",
+    "agent-p1",
+    "agent-p2"
+  ],
+  "baselines": [
+    "teacher",
+    "random",
+    "idle"
+  ],
+  "seed": 20261013,
+  "minimum_clear_rate": 0.8,
+  "horizons": {
+    "iceclimber-mountain1": 12000
+  },
+  "death_metric": "cartridge-life-losses-v2"
+}

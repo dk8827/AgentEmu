@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "name": "agentemu-dd2-release-v2",
+  "notes": "Double Dragon II only. Same starts, budgets and acceptance threshold as release-v1. The scripted teacher/partner is explicitly lateral-jumps: the original standard partner can hold Up against an early ledge indefinitely. Keep release-v1 results separately; scores from the two partner protocols are not interchangeable.",
+  "selection": [
+    0,
+    16,
+    40,
+    80,
+    103,
+    139,
+    177,
+    217
+  ],
+  "test": [
+    109,
+    119,
+    131,
+    143,
+    157,
+    169,
+    181,
+    199,
+    227,
+    239
+  ],
+  "profiles": [
+    "pair",
+    "agent-p1",
+    "agent-p2"
+  ],
+  "baselines": [
+    "teacher",
+    "random",
+    "idle"
+  ],
+  "seed": 20261013,
+  "minimum_clear_rate": 0.8,
+  "horizons": {
+    "doubledragon2-mission1": 18000
+  },
+  "scripted_partners": {
+    "doubledragon2-mission1": "lateral-jumps"
+  }
+}

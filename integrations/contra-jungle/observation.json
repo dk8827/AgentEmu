@@ -1,0 +1,219 @@
+{
+  "schema": "contra-jungle-256-v1",
+  "width": 256,
+  "notes": "Float32. Encodings document existing v1 behavior; divisors are not physical-unit conversions. Unlisted slots and reserved fields are zero. Missing entities are all zero. Player-relative order is self then teammate. Indices and normalization are a model ABI.",
+  "groups": [
+    {
+      "name": "header",
+      "start": 0,
+      "stride": 8,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "port",
+          "encoding": "player as f32",
+          "reserved": false
+        },
+        {
+          "name": "gameplay",
+          "encoding": "self.gameplay as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "phase",
+          "encoding": "self.phase as f32 / 7.",
+          "reserved": false
+        },
+        {
+          "name": "fire_phase",
+          "encoding": "(self.phase & 1) as f32",
+          "reserved": false
+        },
+        {
+          "name": "camera_x",
+          "encoding": "self.camera_x as f32 / 4096.",
+          "reserved": false
+        },
+        {
+          "name": "world_x",
+          "encoding": "(self.camera_x as f32 + me.x as f32) / 4096.",
+          "reserved": false
+        },
+        {
+          "name": "boss_defeated",
+          "encoding": "self.boss_defeated as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "two_players",
+          "encoding": "self.two_players as u8 as f32",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "players",
+      "start": 8,
+      "stride": 16,
+      "repeat": 2,
+      "order": "self, teammate",
+      "fields": [
+        {
+          "name": "active",
+          "encoding": "p.active as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "x",
+          "encoding": "p.x as f32 / 255.",
+          "reserved": false
+        },
+        {
+          "name": "y",
+          "encoding": "p.y as f32 / 240.",
+          "reserved": false
+        },
+        {
+          "name": "vx",
+          "encoding": "p.vx as f32 / 4.",
+          "reserved": false
+        },
+        {
+          "name": "vy",
+          "encoding": "p.vy / 8.",
+          "reserved": false
+        },
+        {
+          "name": "grounded",
+          "encoding": "p.grounded as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "dead",
+          "encoding": "p.dead as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "reserve_lives",
+          "encoding": "p.reserve_lives as f32 / 10.",
+          "reserved": false
+        },
+        {
+          "name": "invincible",
+          "encoding": "p.invincible as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "water",
+          "encoding": "p.water as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon0",
+          "encoding": "(p.weapon == 0) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon1",
+          "encoding": "(p.weapon == 1) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon2",
+          "encoding": "(p.weapon == 2) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon3",
+          "encoding": "(p.weapon == 3) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "weapon4",
+          "encoding": "(p.weapon == 4) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "rapid",
+          "encoding": "p.rapid as u8 as f32",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "start": 40,
+      "stride": 7,
+      "repeat": 8,
+      "order": "squared-distance, then source slot",
+      "fields": [
+        {
+          "name": "present",
+          "encoding": "1.",
+          "reserved": false
+        },
+        {
+          "name": "dx",
+          "encoding": "(e.x as f32 - me.x as f32) / 256.",
+          "reserved": false
+        },
+        {
+          "name": "dy",
+          "encoding": "(e.y as f32 - me.y as f32) / 240.",
+          "reserved": false
+        },
+        {
+          "name": "vx",
+          "encoding": "e.vx / 8.",
+          "reserved": false
+        },
+        {
+          "name": "vy",
+          "encoding": "e.vy / 8.",
+          "reserved": false
+        },
+        {
+          "name": "kind1_0b_0f",
+          "encoding": "matches!(e.kind, 1 | 0x0b | 0x0f) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "kind0",
+          "encoding": "(e.kind == 0) as u8 as f32",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "terrain",
+      "start": 96,
+      "stride": 4,
+      "repeat": 40,
+      "order": "self-centered 5 rows x 8 columns, row-major",
+      "fields": [
+        {
+          "name": "known",
+          "encoding": "(code != 4) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "floor",
+          "encoding": "(code == 1) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "water",
+          "encoding": "(code == 2) as u8 as f32",
+          "reserved": false
+        },
+        {
+          "name": "solid",
+          "encoding": "(code == 3) as u8 as f32",
+          "reserved": false
+        }
+      ]
+    }
+  ],
+  "encoder_sha256": "52681ac0d68fd3520e4d730c3eab224b947cbed0ecb197628de9be046569854b"
+}

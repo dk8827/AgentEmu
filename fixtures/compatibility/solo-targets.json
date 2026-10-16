@@ -1,0 +1,112 @@
+[
+  {
+    "file": "Super Mario Bros 2 (U) (PRG 1).nes",
+    "sha256": "6ba64ff651ede7eea2f6142f681b5f03df496456523e3712f8cd5bbee8f2f2ae",
+    "mapper": 4,
+    "prg": 8,
+    "chr": 16,
+    "battery": false,
+    "title": "Super Mario Bros. 2",
+    "players": 1,
+    "gameplay_script": "solo/00.json"
+  },
+  {
+    "file": "Legend of Zelda, The (U) (PRG 1).nes",
+    "sha256": "89232edf4f9b52e3cb872094bc78973de080befca2ddea893b6e936066514d4e",
+    "mapper": 1,
+    "prg": 8,
+    "chr": 0,
+    "battery": true,
+    "title": "The Legend of Zelda",
+    "players": 1,
+    "gameplay_script": "solo/01.json"
+  },
+  {
+    "file": "Zelda 2 - The Adventure of Link (U).nes",
+    "sha256": "ad8c0fbcf092bf84b48e69fd3964eea4ed91bfe62abc352943d537979782680c",
+    "mapper": 1,
+    "prg": 8,
+    "chr": 16,
+    "battery": true,
+    "title": "Zelda II: The Adventure of Link",
+    "players": 1,
+    "gameplay_script": "solo/02.json"
+  },
+  {
+    "file": "Metroid (U).nes",
+    "sha256": "c5eea06e1e1128b576bd789f1a4f63bb154d6d31579c2f319382fb77a72d34a6",
+    "mapper": 1,
+    "prg": 8,
+    "chr": 0,
+    "battery": false,
+    "title": "Metroid",
+    "players": 1,
+    "gameplay_script": "solo/03.json"
+  },
+  {
+    "file": "Mega Man 2 (U).nes",
+    "sha256": "27b5a635df33ed57ed339dfc7fd62fc603b39c1d1603adb5cdc3562a0b0d555b",
+    "mapper": 1,
+    "prg": 16,
+    "chr": 0,
+    "battery": false,
+    "title": "Mega Man 2",
+    "players": 1,
+    "gameplay_script": "solo/04.json"
+  },
+  {
+    "file": "Castlevania (U) (PRG 1).nes",
+    "sha256": "0bf466eb3819eee34e41de076b5c1bf16375d0de5ba64ede8ade6ed599accb53",
+    "mapper": 2,
+    "prg": 8,
+    "chr": 0,
+    "battery": false,
+    "title": "Castlevania",
+    "players": 1,
+    "gameplay_script": "solo/05.json"
+  },
+  {
+    "file": "Ninja Gaiden (U).nes",
+    "sha256": "07d9e57e35184667c7b89e30857a44c5c404b48332ad12e66be91100eccd4f5e",
+    "mapper": 1,
+    "prg": 8,
+    "chr": 16,
+    "battery": false,
+    "title": "Ninja Gaiden",
+    "players": 1,
+    "gameplay_script": "solo/06.json"
+  },
+  {
+    "file": "Mike Tyson's Punch-Out!! (U) (PRG 0).nes",
+    "sha256": "0435f6d9bcfeb474a592c3a950530a99c03a6f6cacff793dc88f822bb8cc6952",
+    "mapper": 9,
+    "prg": 8,
+    "chr": 16,
+    "battery": false,
+    "title": "Mike Tyson\u2019s Punch-Out!!",
+    "players": 1,
+    "gameplay_script": "solo/07.json"
+  },
+  {
+    "file": "Kirby's Adventure (U) (PRG 1) [!].nes",
+    "sha256": "34afcebaf04d57a42c2436fb95b933c7841e1621f1dc3be482380baef33ec3d8",
+    "mapper": 4,
+    "prg": 32,
+    "chr": 32,
+    "battery": true,
+    "title": "Kirby\u2019s Adventure",
+    "players": 1,
+    "gameplay_script": "solo/08.json"
+  },
+  {
+    "file": "Final Fantasy (U).nes",
+    "sha256": "d360beeee19a69d1c92d02292167c57f2d3ca8405b79101fc8c2f39dea549667",
+    "mapper": 1,
+    "prg": 16,
+    "chr": 0,
+    "battery": true,
+    "title": "Final Fantasy",
+    "players": 1,
+    "gameplay_script": "solo/09.json"
+  }
+]

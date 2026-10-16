@@ -1,0 +1,144 @@
+{
+  "schema": "worldcup-firstmatch-256-v1",
+  "width": 256,
+  "notes": "Float32. Encodings document existing v1 behavior; divisors are not physical-unit conversions. Unlisted slots and reserved fields are zero. Missing entities are all zero. Player-relative order is self then teammate. Indices and normalization are a model ABI.",
+  "groups": [
+    {
+      "name": "header",
+      "start": 0,
+      "stride": 8,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "port",
+          "encoding": "slot as f32",
+          "reserved": false
+        },
+        {
+          "name": "gameplay",
+          "encoding": "b(self.gameplay)",
+          "reserved": false
+        },
+        {
+          "name": "phase",
+          "encoding": "self.phase as f32 / 479.",
+          "reserved": false
+        },
+        {
+          "name": "pulse16",
+          "encoding": "b(self.phase % 16 < 4)",
+          "reserved": false
+        },
+        {
+          "name": "second_half",
+          "encoding": "b(self.second_half)",
+          "reserved": false
+        },
+        {
+          "name": "kickoff_wait",
+          "encoding": "b(self.kickoff_wait)",
+          "reserved": false
+        },
+        {
+          "name": "seconds_remaining",
+          "encoding": "self.seconds_remaining as f32 / 240.",
+          "reserved": false
+        },
+        {
+          "name": "pulse120",
+          "encoding": "b(self.phase % 120 < 4)",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "players",
+      "start": 8,
+      "stride": 16,
+      "repeat": 2,
+      "order": "self, teammate",
+      "fields": [
+        {
+          "name": "active",
+          "encoding": "b(p.active)",
+          "reserved": false
+        },
+        {
+          "name": "x",
+          "encoding": "p.x as f32 / 1024.",
+          "reserved": false
+        },
+        {
+          "name": "depth",
+          "encoding": "p.depth as f32 / 512.",
+          "reserved": false
+        },
+        {
+          "name": "ball_dx",
+          "encoding": "(self.ball[0] as f32 - p.x as f32) / 1024.",
+          "reserved": false
+        },
+        {
+          "name": "ball_ddepth",
+          "encoding": "(self.ball[1] as f32 - p.depth as f32) / 512.",
+          "reserved": false
+        },
+        {
+          "name": "actor",
+          "encoding": "p.actor as f32 / 11.",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "match",
+      "start": 40,
+      "stride": 4,
+      "repeat": 1,
+      "order": "",
+      "fields": [
+        {
+          "name": "ball_x",
+          "encoding": "self.ball[0] as f32 / 1024.",
+          "reserved": false
+        },
+        {
+          "name": "ball_depth",
+          "encoding": "self.ball[1] as f32 / 512.",
+          "reserved": false
+        },
+        {
+          "name": "usa_score",
+          "encoding": "self.usa_score as f32 / 99.",
+          "reserved": false
+        },
+        {
+          "name": "opponent_score",
+          "encoding": "self.opponent_score as f32 / 99.",
+          "reserved": false
+        }
+      ]
+    },
+    {
+      "name": "actors",
+      "start": 48,
+      "stride": 2,
+      "repeat": 12,
+      "order": "source actor slot",
+      "fields": [
+        {
+          "name": "dx",
+          "encoding": "(actor.x - self.x) / 1024",
+          "reserved": false
+        },
+        {
+          "name": "ddepth",
+          "encoding": "(actor.depth - self.depth) / 512",
+          "reserved": false
+        }
+      ]
+    }
+  ],
+  "encoder_sha256": "52c4b2d1df2ea1321f4f901416795bf84209c3a6d2e2045c3b784298b8259714"
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "Snow Bros. floor 1 v1",
+  "architecture": "snowbros-mlp-256-64-64-10-v1",
+  "observation": "snowbros-floor1-256-v1",
+  "action": "nes-factorized-3-3-2-2-v1",
+  "rom_sha256": "5c7ab65f5ed5a00f2c6193e060423f05b5b88c1e937f5514686627a5e9529c58",
+  "weights_sha256": "49d73597f771872e709abbed96925323879a1798742f0d0224afeee8e994b195",
+  "decision_frames": 1,
+  "training": {
+    "algorithm": "observation-only teacher + DAgger"
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "prg_sha256": "613108566406481bf1e6346ad52b06fa01e4cd71fa3c9b810d9694a7738b5d57",
+    "note": "Demon Sword SL1ROM",
+    "ignore_four_screen": true
+  },
+  {
+    "prg_sha256": "16397c089d7b154fa4632c3d2ebf5de3f699f39ad4b06fff781d9aaf835dd1dd",
+    "note": "Micro Machines Camerica",
+    "mapper": 71
+  },
+  {
+    "prg_sha256": "8bb6627e36bce921081361bd298e8056d68dd70fb5c9d55eadf15320e5bc9117",
+    "note": "StarTropics HKROM",
+    "mmc6": true
+  },
+  {
+    "prg_sha256": "d113ad5206dfc240816450a964fb8eca60afe686300f423df945c4f0d0cfba2e",
+    "note": "Zodas Revenge HKROM",
+    "mmc6": true
+  },
+  {
+    "prg_sha256": "94e2df0d454f599e6ab2bda840288d12be33e5e1ebd6cdb01141608a382fb22b",
+    "note": "European Ufouria",
+    "pal": true
+  },
+  {
+    "prg_sha256": "8150a17c710263a0afd81bcfe33b2308094fba44d02cd7e9fe213b4a54292beb",
+    "note": "European Mr Gimmick",
+    "pal": true
+  },
+  {
+    "prg_sha256": "bcdd22fbe343ebd33c7fd19309510079150d1e4dc052f65382b64d197d6ba080",
+    "note": "Duck Hunt",
+    "zapper": true
+  }
+]

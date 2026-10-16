@@ -1,0 +1,76 @@
+{
+  "id": "contra-jungle",
+  "module": "adapter",
+  "architecture": "contra-mlp-256-64-64-10-v1",
+  "observation": "contra-jungle-256-v1",
+  "rom_sha256": "26541a5550ee22deeb3d5484e4a96130219b58cff74d068fb1eb6567fa5e5519",
+  "reset": "contra-two-player-v1",
+  "scope": "Contra · Jungle only",
+  "actions": [
+    "Jump",
+    "Fire"
+  ],
+  "assistance_architecture": "contra-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "contra-jungle-268-shared-v1",
+  "policy_variants": [
+    {
+      "observation": "contra-jungle-272-history-v1",
+      "architecture": "contra-history-mlp-272-64-64-10-v1",
+      "inputs": 272,
+      "assistance": false,
+      "features": "history"
+    },
+    {
+      "observation": "contra-jungle-284-history-shared-v1",
+      "architecture": "contra-history-shared-mlp-284-64-64-10-v1",
+      "inputs": 284,
+      "assistance": true,
+      "features": "history"
+    },
+    {
+      "observation": "contra-jungle-296-history-aim-v1",
+      "architecture": "contra-history-aim-mlp-296-64-64-10-v1",
+      "inputs": 296,
+      "assistance": false,
+      "features": "history-aim"
+    },
+    {
+      "observation": "contra-jungle-308-history-aim-shared-v1",
+      "architecture": "contra-history-aim-shared-mlp-308-64-64-10-v1",
+      "inputs": 308,
+      "assistance": true,
+      "features": "history-aim"
+    }
+  ],
+  "solo_reset": "contra-jungle-solo-menu-v2",
+  "solo_menu": [
+    [
+      600,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ],
+    [
+      30,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        8,
+        0
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "chipndale-zone0",
+  "module": "chip",
+  "architecture": "chipndale-mlp-256-64-64-10-v1",
+  "observation": "chipndale-zone0-256-v1",
+  "rom_sha256": "b44ad2bd58d681e13eaa3b1bb6aa411be7cdf6bd79ab774492264c1a3c3e25a3",
+  "reset": "chipndale-two-player-v1",
+  "scope": "Chip \u2019n Dale \u00b7 Zone 0 only",
+  "actions": [
+    "A button",
+    "B button"
+  ],
+  "assistance_architecture": "chipndale-shared-mlp-268-64-64-10-v1",
+  "assistance_observation": "chipndale-zone0-268-shared-v1"
+}

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "name": "worldcup-firstmatch-acceptance-v1",
+  "task": "worldcup-firstmatch",
+  "split": "acceptance",
+  "horizon": 60000,
+  "notes": "Goal: USA wins the first Tournament 2P match against Cameroon, default Tony/Mark lineup. Frozen comparisons; mixed partners are scripted, not human trials. A lead before full time or a draw is not success.",
+  "cases": [
+    {
+      "profile": "pair",
+      "warmup": 0,
+      "seed": 4015
+    },
+    {
+      "profile": "pair",
+      "warmup": 101,
+      "seed": 4116
+    },
+    {
+      "profile": "pair",
+      "warmup": 151,
+      "seed": 4166
+    },
+    {
+      "profile": "teacher",
+      "warmup": 0,
+      "seed": 4112
+    },
+    {
+      "profile": "teacher",
+      "warmup": 101,
+      "seed": 4213
+    },
+    {
+      "profile": "teacher",
+      "warmup": 151,
+      "seed": 4263
+    },
+    {
+      "profile": "random",
+      "warmup": 0,
+      "seed": 4209
+    },
+    {
+      "profile": "random",
+      "warmup": 101,
+      "seed": 4310
+    },
+    {
+      "profile": "random",
+      "warmup": 151,
+      "seed": 4360
+    },
+    {
+      "profile": "idle",
+      "warmup": 0,
+      "seed": 4306
+    },
+    {
+      "profile": "idle",
+      "warmup": 101,
+      "seed": 4407
+    },
+    {
+      "profile": "idle",
+      "warmup": 151,
+      "seed": 4457
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 0,
+      "seed": 4403
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 101,
+      "seed": 4504
+    },
+    {
+      "profile": "agent-p1",
+      "warmup": 151,
+      "seed": 4554
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 0,
+      "seed": 4500
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 101,
+      "seed": 4601
+    },
+    {
+      "profile": "agent-p2",
+      "warmup": 151,
+      "seed": 4651
+    }
+  ]
+}

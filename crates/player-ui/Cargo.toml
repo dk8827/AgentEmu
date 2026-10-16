@@ -1,0 +1,42 @@
+[package]
+license.workspace = true
+repository.workspace = true
+name = "player-ui"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+session-engine = { path = "../session-engine" }
+eframe = { version = "=0.33.3", default-features = false, features = ["wgpu", "default_fonts", "accesskit", "web_screen_reader", "x11", "wayland", "persistence"] }
+egui = { version = "=0.33.3", features = ["serde"] }
+nes-core = { path = "../nes-core" }
+nes-video = { path = "../nes-video" }
+contra-agent = { path = "../contra-agent" }
+serde.workspace = true
+serde_json.workspace = true
+base64 = "0.22"
+sha2 = "0.10"
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+rfd = "0.15"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+cpal = "0.16"
+gilrs = "0.11"
+directories = "6"
+pollster = "0.4"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen.workspace = true
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = ["Window", "Document", "HtmlCanvasElement", "Storage", "Location", "Navigator", "Gamepad", "GamepadButton", "GamepadMappingType", "HtmlInputElement", "HtmlAnchorElement", "File", "FileList", "Blob", "Url", "Event", "AudioScheduledSourceNode", "AudioContext", "AudioContextState", "AudioBuffer", "AudioBufferSourceNode", "AudioDestinationNode", "AudioNode", "AudioParam", "GainNode", "console", "Worker", "WorkerOptions", "WorkerType", "MessageEvent", "MessageChannel", "MessagePort", "AudioWorklet", "AudioWorkletNode", "Worklet"] }
+wgpu = { version = "27", default-features = false, features = ["std", "wgsl", "webgpu", "webgl"] }
+
+[lints]
+workspace = true

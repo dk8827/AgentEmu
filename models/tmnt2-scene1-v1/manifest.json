@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "TMNT II Scene 1 v1 (experimental)",
+  "architecture": "tmnt2-mlp-256-64-64-10-v1",
+  "observation": "tmnt2-scene1-256-v1",
+  "action": "nes-factorized-3-3-2-2-v1",
+  "rom_sha256": "637fa9d773cb39fcd4e55faf46bc53f82ac9d7706f8473adeb06e2b9e95c2414",
+  "weights_sha256": "5d438d07700bb24dfce801ac94dda7b72e286d4d9177a025edfedc5453544194",
+  "decision_frames": 1,
+  "training": {
+    "algorithm": "observation-only teacher + DAgger"
+  }
+}

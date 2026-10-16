@@ -1,0 +1,15 @@
+{
+  "name": "agentemu-web",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "playwright": "1.58.2",
+    "prettier": "^3.9.10"
+  },
+  "scripts": {
+    "test": "python3 ../scripts/check.py browser-unit",
+    "test:ui": "node ../scripts/test-rust-ui.mjs",
+    "format:check": "prettier --check \"*.mjs\" \"*.html\" \"*.css\""
+  },
+  "license": "MIT"
+}
